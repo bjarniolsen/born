@@ -4,6 +4,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
+
+<!-- // TODO: REMOVE THIS // -->
+		<meta name="robots" content="noindex">
+<!-- ////// -->
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Billedkunst for børn | Sassi Bischoff</title>
@@ -81,7 +86,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-9647211-1','auto');ga('send','pageview');
         </script>
     </body>
 </html>
