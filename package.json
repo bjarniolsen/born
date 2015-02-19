@@ -1,0 +1,25 @@
+{
+  "name": "sassi.dk",
+  "version": "0.0.1",
+  "description": "Sassi.dk billedkunst for boern",
+  "main": "default.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjarniolsen/born"
+  },
+  "author": "Bjarni Olsen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-convert-encoding": "0.0.3",
+    "gulp-livereload": "^3.7.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglifyjs": "^0.5.0",
+    "gulp-util": "^3.0.1"
+  }
+}

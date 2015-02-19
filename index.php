@@ -28,13 +28,14 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">Billedkunst for børn</h1>
-                <nav>
+				<p>Og et slogan måske</p>
+                <!--<nav>
                     <ul>
                         <li><a href="#">nav ul li a</a></li>
                         <li><a href="#">nav ul li a</a></li>
                         <li><a href="#">nav ul li a</a></li>
                     </ul>
-                </nav>
+                </nav>-->
             </header>
         </div>
 
@@ -42,27 +43,86 @@
             <div class="main wrapper clearfix">
 
                 <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
+					<div class="section">
+                    	<h2>Workshop 1</h2>
+                    	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+					</div>
+					<div class="section">
+                    	<h2>Workshop 2</h2>
+                    	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+					</div>
+					<div class="section">
+                    	<h2>Tilmelding</h2>
+                    	<form action="subscribe.php" name="workshop" id="workshop" method="post">
+							<fieldset>
+								<legend>Personlige oplysninger</legend>
+								<label>
+									<span>Email adresse</span>
+									<input type="text" name="email" placeholder="ditnavn@mail.dk" />
+								</label>
+								<label>
+									<span>Mobilnummer</span>
+									<input type="text" name="phone" placeholder="12345678" />
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Vælg workshop</legend>
+								<label>
+									<input type="checkbox" name="workshop-1" /> <!-- checked="checked"-->
+									<span>Vælg workshop 1</span>
+								</label>
+								<div class="form-group _hidden" id="workshop-group-1">
+									<label>
+										<span>Barnets navn</span>
+										<input type="text" name="childname-group-1" placeholder="Dit barns navn" />
+									</label>
+									<label>
+										<span>Barnets alder</span>
+										<select name="childage-group-1">
+											<option value="5">5 år</option> 
+											<option value="6">6 år</option>
+											<option value="7">7 år</option>
+										</select>
+									</label>
+									<a href="#" class="add-person">tilmeld flere børn</a>
+								</div>
+
+								<label>
+									<input type="checkbox" name="workshop-2" />
+									<span>Vælg workshop 2</span>
+								</label>
+								<div class="form-group _hidden" id="workshop-group-2">
+									<label>
+										<span>Barnets navn</span>
+										<input type="text" name="childname-group-2" placeholder="Dit barns navn" />
+									</label>
+									<label>
+										<span>Barnets alder</span>
+										<select name="childage-group-2">
+											<option value="8">8 år</option> 
+											<option value="9">9 år</option>
+											<option value="10">10 år</option>
+										</select>
+									</label>
+									<a href="#" class="add-person">tilmeld flere børn</a>
+								</div>
+
+								<label>
+									<span>Skriv eventuelt en besked</span>
+									<textarea name="message" placeholder="Personlig besked"></textarea>
+								</label>
+								<div class="buttons">
+									<input type="submit" value="Tilmeld" />
+								</div>
+							</fieldset>
+						</form>
+					</div>
                 </article>
 
                 <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                    <h3>Sassi Bischoff</h3>
+                    <p><img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
                 </aside>
 
             </div> <!-- #main -->
