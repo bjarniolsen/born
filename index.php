@@ -26,10 +26,10 @@
     <body>
 
         <div class="header-container">
-            <header class="wrapper clearfix">
+            <header class="wrapper clearfix" role="banner">
                 <h1 class="title">Billedkunst for børn</h1>
 				<p>Og et slogan måske</p>
-                <!--<nav>
+                <!--<nav role="navigation">
                     <ul>
                         <li><a href="#">nav ul li a</a></li>
                         <li><a href="#">nav ul li a</a></li>
@@ -39,20 +39,21 @@
             </header>
         </div>
 
-        <div class="main-container">
+		<main class="main-container" role="main">
             <div class="main wrapper clearfix">
 
-                <article>
-					<div class="section">
-                    	<h2>Workshop 1</h2>
+                <article role="article">
+					<section aria-labelledby="section-heading-ws-1">
+                    	<h2 id="section-heading-ws-1">Workshop 1</h2>
                     	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-					</div>
-					<div class="section">
-                    	<h2>Workshop 2</h2>
+					</section>
+					<section aria-labelledby="section-heading-ws-2">
+                    	<h2 id="section-heading-ws-2">Workshop 2</h2>
                     	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-					</div>
-					<div class="section">
-                    	<h2>Tilmelding</h2>
+					</section>
+					<section aria-labelledby="section-heading-subscribe">
+                    	<h2 id="section-heading-subscribe">Tilmelding</h2>
+
                     	<form action="subscribe.php" name="workshop" id="workshop" method="post">
 							<fieldset>
 								<legend>Personlige oplysninger</legend>
@@ -107,17 +108,20 @@
 									</label>
 									<a href="#" class="add-person">tilmeld flere børn</a>
 								</div>
-
+							</fieldset>
+							<fieldset>
+								<legend>Personlig besked</legend>
 								<label>
-									<span>Skriv eventuelt en besked</span>
+									<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
 									<textarea name="message" placeholder="Personlig besked"></textarea>
 								</label>
-								<div class="buttons">
-									<input type="submit" value="Tilmeld" />
-								</div>
 							</fieldset>
+							<div class="buttons">
+								<input type="submit" value="Tilmeld" />
+							</div>
 						</form>
-					</div>
+
+					</section>
                 </article>
 
                 <aside>
@@ -126,10 +130,10 @@
                 </aside>
 
             </div> <!-- #main -->
-        </div> <!-- #main-container -->
+        </main> <!-- #main-container -->
 
         <div class="footer-container">
-            <footer class="wrapper">
+            <footer class="wrapper" role="contentinfo">
                 <h3>footer</h3>
             </footer>
         </div>
