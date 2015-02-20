@@ -27,7 +27,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix" role="banner">
-                <h1 class="title">Billedkunst for børn</h1>
+                <h1 class="title" role="heading" aria-level="1">Billedkunst for børn</h1>
 				<p>Og et slogan måske</p>
                 <!--<nav role="navigation">
                     <ul>
@@ -42,90 +42,88 @@
 		<main class="main-container" role="main">
             <div class="main wrapper clearfix">
 
-                <article role="article">
-					<section aria-labelledby="section-heading-ws-1">
-                    	<h2 id="section-heading-ws-1">Workshop 1</h2>
-                    	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-					</section>
-					<section aria-labelledby="section-heading-ws-2">
-                    	<h2 id="section-heading-ws-2">Workshop 2</h2>
-                    	<p><img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-					</section>
-					<section aria-labelledby="section-heading-subscribe">
-                    	<h2 id="section-heading-subscribe">Tilmelding</h2>
+				<section aria-labelledby="section-heading-ws-1">
+                    <h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
+                    <p><img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+				</section>
+				<section aria-labelledby="section-heading-ws-2">
+                    <h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
+                    <p><img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+				</section>
+				<section aria-labelledby="section-heading-subscribe">
+                    <h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
-                    	<form action="subscribe.php" name="workshop" id="workshop" method="post">
-							<fieldset>
-								<legend>Personlige oplysninger</legend>
-								<label>
-									<span>Email adresse</span>
-									<input type="text" name="email" placeholder="ditnavn@mail.dk" />
-								</label>
-								<label>
-									<span>Mobilnummer</span>
-									<input type="text" name="phone" placeholder="12345678" />
-								</label>
-							</fieldset>
+                    <form action="subscribe.php" name="workshop" id="workshop" method="post">
+						<fieldset>
+							<legend>Personlige oplysninger</legend>
+							<label>
+								<span>Email adresse</span>
+								<input type="text" name="email" placeholder="ditnavn@mail.dk" />
+							</label>
+							<label>
+								<span>Mobilnummer</span>
+								<input type="text" name="phone" placeholder="12345678" />
+							</label>
+						</fieldset>
 
-							<fieldset>
-								<legend>Vælg workshop</legend>
+						<fieldset>
+							<legend>Vælg workshop</legend>
+							<label>
+								<input type="checkbox" name="workshop-1" /> <!-- checked="checked"-->
+								<span>Vælg workshop 1</span>
+							</label>
+							<div class="form-group _hidden" id="workshop-group-1">
 								<label>
-									<input type="checkbox" name="workshop-1" /> <!-- checked="checked"-->
-									<span>Vælg workshop 1</span>
+									<span>Barnets navn</span>
+									<input type="text" name="childname-group-1" placeholder="Dit barns navn" />
 								</label>
-								<div class="form-group _hidden" id="workshop-group-1">
-									<label>
-										<span>Barnets navn</span>
-										<input type="text" name="childname-group-1" placeholder="Dit barns navn" />
-									</label>
-									<label>
-										<span>Barnets alder</span>
-										<select name="childage-group-1">
-											<option value="5">5 år</option> 
-											<option value="6">6 år</option>
-											<option value="7">7 år</option>
-										</select>
-									</label>
-									<a href="#" class="add-person">tilmeld flere børn</a>
-								</div>
-
 								<label>
-									<input type="checkbox" name="workshop-2" />
-									<span>Vælg workshop 2</span>
+									<span>Barnets alder</span>
+									<select name="childage-group-1">
+										<option value="5">5 år</option> 
+										<option value="6">6 år</option>
+										<option value="7">7 år</option>
+									</select>
 								</label>
-								<div class="form-group _hidden" id="workshop-group-2">
-									<label>
-										<span>Barnets navn</span>
-										<input type="text" name="childname-group-2" placeholder="Dit barns navn" />
-									</label>
-									<label>
-										<span>Barnets alder</span>
-										<select name="childage-group-2">
-											<option value="8">8 år</option> 
-											<option value="9">9 år</option>
-											<option value="10">10 år</option>
-										</select>
-									</label>
-									<a href="#" class="add-person">tilmeld flere børn</a>
-								</div>
-							</fieldset>
-							<fieldset>
-								<legend>Personlig besked</legend>
-								<label>
-									<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
-									<textarea name="message" placeholder="Personlig besked"></textarea>
-								</label>
-							</fieldset>
-							<div class="buttons">
-								<input type="submit" value="Tilmeld" />
+								<a href="#" class="add-person">tilmeld flere børn</a>
 							</div>
-						</form>
 
-					</section>
-                </article>
+							<label>
+								<input type="checkbox" name="workshop-2" />
+								<span>Vælg workshop 2</span>
+							</label>
+							<div class="form-group _hidden" id="workshop-group-2">
+								<label>
+									<span>Barnets navn</span>
+									<input type="text" name="childname-group-2" placeholder="Dit barns navn" />
+								</label>
+								<label>
+									<span>Barnets alder</span>
+									<select name="childage-group-2">
+										<option value="8">8 år</option> 
+										<option value="9">9 år</option>
+										<option value="10">10 år</option>
+									</select>
+								</label>
+								<a href="#" class="add-person">tilmeld flere børn</a>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Personlig besked</legend>
+							<label>
+								<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
+								<textarea name="message" placeholder="Personlig besked"></textarea>
+							</label>
+						</fieldset>
+						<div class="buttons">
+							<input type="submit" value="Tilmeld" />
+						</div>
+					</form>
+
+				</section>
 
                 <aside>
-                    <h3>Sassi Bischoff</h3>
+                    <h3 role="heading" aria-level="3">Sassi Bischoff</h3>
                     <p><img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
                 </aside>
 
@@ -134,7 +132,7 @@
 
         <div class="footer-container">
             <footer class="wrapper" role="contentinfo">
-                <h3>footer</h3>
+                <h3 role="heading" aria-level="3">footer</h3>
             </footer>
         </div>
 
