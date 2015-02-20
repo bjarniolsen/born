@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="static/css/normalize.min.css">
-        <link rel="stylesheet" href="static/css/main.css">
+        <!--<link rel="stylesheet" href="static/css/main.css">-->
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,11 +44,11 @@
 
 				<section aria-labelledby="section-heading-ws-1">
                     <h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
-                    <p><img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                    <p><!--img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" /-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
 				</section>
 				<section aria-labelledby="section-heading-ws-2">
                     <h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
-                    <p><img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                    <p><!--img src="static/img/_sassi-bischoff.jpg" alt="Sassi Bischoff" width="100" height="120" /-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
 				</section>
 				<section aria-labelledby="section-heading-subscribe">
                     <h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
@@ -66,20 +66,29 @@
 							</label>
 						</fieldset>
 
+
+						<!--
+						<input name="person[0][first_name]" value="john" />
+						<input name="person[0][last_name]" value="smith" />
+						...
+						<input name="person[1][first_name]" value="jane" />
+						<input name="person[1][last_name]" value="jones" />
+						-->
+
 						<fieldset>
 							<legend>Vælg workshop</legend>
 							<label>
-								<input type="checkbox" name="workshop-1" /> <!-- checked="checked"-->
+								<input type="checkbox" name="workshop[0]" /> <!-- checked="checked"-->
 								<span>Vælg workshop 1</span>
 							</label>
 							<div class="form-group _hidden" id="workshop-group-1">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="childname-group-1" placeholder="Dit barns navn" />
+									<input type="text" name="childname[0][group]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="childage-group-1">
+									<select name="childage[0][group]">
 										<option value="5">5 år</option> 
 										<option value="6">6 år</option>
 										<option value="7">7 år</option>
@@ -89,17 +98,17 @@
 							</div>
 
 							<label>
-								<input type="checkbox" name="workshop-2" />
+								<input type="checkbox" name="workshop[1]" />
 								<span>Vælg workshop 2</span>
 							</label>
 							<div class="form-group _hidden" id="workshop-group-2">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="childname-group-2" placeholder="Dit barns navn" />
+									<input type="text" name="childname[1][group]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="childage-group-2">
+									<select name="childage[1][group]">
 										<option value="8">8 år</option> 
 										<option value="9">9 år</option>
 										<option value="10">10 år</option>
@@ -124,7 +133,7 @@
 
                 <aside>
                     <h3 role="heading" aria-level="3">Sassi Bischoff</h3>
-                    <p><img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                    <p><!--img src="static/img/_sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" /-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
                 </aside>
 
             </div> <!-- #main -->

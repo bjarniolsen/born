@@ -4,15 +4,25 @@ S.Workshop = (function(win, doc, $) {
 
     function submitHandler(form) {
 		// get array of posted values
-		console.log(form.serializeArray());
+		$.ajax({
+			url: "subscribe.php",
+			type: "POST",
+			data: form.serializeArray(),
+			success: function(res) {
+				console.log(res);
+			},
+			error: function(xhr, thrownError) {
+				console.log(xhr.responseText, thrownError);
+			}
+		});
     }
 
     function addPerson(element) {
-    	console.log(element);
+    	//console.log(element);
     }
 
     function expandGroup(element) {
-    	console.log(element);
+    	//console.log(element);
     }
 
     return {
