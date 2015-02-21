@@ -66,15 +66,6 @@
 							</label>
 						</fieldset>
 
-
-						<!--
-						<input name="person[0][first_name]" value="john" />
-						<input name="person[0][last_name]" value="smith" />
-						...
-						<input name="person[1][first_name]" value="jane" />
-						<input name="person[1][last_name]" value="jones" />
-						-->
-
 						<fieldset>
 							<legend>Vælg workshop</legend>
 							<label>
@@ -84,11 +75,11 @@
 							<div class="form-group _hidden" id="workshop-group-1">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="childname[0][group]" placeholder="Dit barns navn" />
+									<input type="text" name="workshop[0][childname]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="childage[0][group]">
+									<select name="workshop[0][childage]">
 										<option value="5">5 år</option> 
 										<option value="6">6 år</option>
 										<option value="7">7 år</option>
@@ -104,11 +95,11 @@
 							<div class="form-group _hidden" id="workshop-group-2">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="childname[1][group]" placeholder="Dit barns navn" />
+									<input type="text" name="workshop[1][childname]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="childage[1][group]">
+									<select name="workshop[1][childage]">
 										<option value="8">8 år</option> 
 										<option value="9">9 år</option>
 										<option value="10">10 år</option>

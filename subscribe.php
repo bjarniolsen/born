@@ -1,30 +1,34 @@
 <?php
+if (!empty($_POST)) {
 
-$workshops = "";
+	$i = 1;
 
-foreach ($_POST['workshop'] as $key => $value) {
-	$workshops .= htmlspecialchars($key) . " || " . htmlspecialchars($value)."\n";
-}
-if(isset($_POST['email'])) {
+	echo "Email: " . $_POST['email'] . "\n";
+	echo "Telefon: " . $_POST['phone'] . "\n";
 
-	$email = $_POST['email'];
-	$phone = $_POST['phone'];
+	foreach ($_POST['workshop'] as $workshop) {
+
+		echo "Workshop " . $i . "\n";
+		echo "Barnets navn: " . $workshop['childname'] . "\n";
+		echo "Barnets alder: " . $workshop['childage'] . "\n";
+
+		$i++;
+	}
+
+	echo "Besked: " . $_POST['message'] . "\n";
+
+
+	$to = $_POST['email'];//"root@localhost.com";
+	$subject = 'Test Message';
 	$message = $_POST['message'];
+	$headers = "MIME-Version: 1.0\n" ;
+	$headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"\n";
+	$headers .= "X-Priority: 1 (Highest)\n";
+	$headers .= "X-MSMail-Priority: High\n";
+	$headers .= "Importance: High\n";
+	$headers .= "From: bjarniolsen@gmail.com\r\n";
 
-	if(isset($_POST['workshop-1'])) {
-		$workshop = $_POST['workshop-1'];
-	}
-
-	if(isset($_POST['workshop-2'])) {
-		$workshop = $_POST['workshop-2'];
-	}
+	mail($to, $subject, $message, $headers);
 
 }
-
-//echo print_r($_POST);
-
-echo $workshops;
-
-//echo $workshop , " - " , $email , " - " , $phone , " - " , $message;
-
 ?>
