@@ -17,8 +17,18 @@ S.Workshop = (function(win, doc, $) {
 		});
     }
 
+    function prepareLabels(formGroups) {
+		$.each(formGroups, function(index, group) {
+			var name = $(group).find("label").children("[name]").attr("name");
+			console.log(group, name);
+		});
+    }
+
     function addPerson(element) {
-    	console.log(element);
+    	var workshopID = $(element).parent().attr("id");
+    	for (var i=0; i<labels.length; i++) {
+    		var name = $(labels[i]).children("[name]").attr("name");
+    	}
     }
 
     function expandGroup(element) {
@@ -34,7 +44,10 @@ S.Workshop = (function(win, doc, $) {
         	// cache dom
         	var $form = $("form"),
 				checkboxes = $form.find('input[type="checkbox"]'),
-				addPersonLink = $form.find(".add-person");
+				formGroups = $form.find(".form-group"),
+				addPersonLink = formGroups.find(".add-person");
+
+			prepareLabels(formGroups);
 
         	// set up events
         	$form.on("submit", function(event) {

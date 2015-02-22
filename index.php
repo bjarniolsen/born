@@ -72,7 +72,7 @@
 								<input type="checkbox" name="workshop[0]" /> <!-- checked="checked"-->
 								<span>Vælg workshop 1</span>
 							</label>
-							<div class="form-group" id="1">
+							<div class="form-group" id="0">
 								<label>
 									<span>Barnets navn</span>
 									<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" />
@@ -85,18 +85,6 @@
 										<option value="7">7 år</option>
 									</select>
 								</label>
-								<label>
-									<span>Barnets navn</span>
-									<input type="text" name="workshop[0][1][childname]" placeholder="Dit barns navn" />
-								</label>
-								<label>
-									<span>Barnets alder</span>
-									<select name="workshop[0][1][childage]">
-										<option value="5">5 år</option> 
-										<option value="6">6 år</option>
-										<option value="7">7 år</option>
-									</select>
-								</label>
 								<a href="#" class="add-person">tilmeld flere børn</a>
 							</div>
 
@@ -104,7 +92,7 @@
 								<input type="checkbox" name="workshop[1]" />
 								<span>Vælg workshop 2</span>
 							</label>
-							<div class="form-group" id="2">
+							<div class="form-group" id="1">
 								<label>
 									<span>Barnets navn</span>
 									<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" />
@@ -164,3 +152,17 @@
         </script>
     </body>
 </html>
+<!--
+<label>
+	<span>Barnets navn</span>
+	<input type="text" name="workshop[0][1][childname]" placeholder="Dit barns navn" />
+</label>
+<label>
+	<span>Barnets alder</span>
+	<select name="workshop[0][1][childage]">
+		<option value="5">5 år</option> 
+		<option value="6">6 år</option>
+		<option value="7">7 år</option>
+	</select>
+</label>
+-->

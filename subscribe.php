@@ -10,23 +10,18 @@ if (!empty($_POST)) {
 
 		echo "Workshop " . $i . "\n";
 
-		//print_r($workshop);
 		foreach ($workshop as $child) {
 			echo "Barnets navn: " . $child['childname'] . "\n";
 			echo "Barnets alder: " . $child['childage'] . "\n";
 		}
-		/*foreach ($workshop['childname'] as $childname) {
-			echo "Barnets navn: " . $childname . "\n";
-		}
-		foreach ($workshop['childage'] as $childage) {
-			echo "Barnets alder: " . $childage . "\n";
-		}*/
+
 		$i++;
 	}
 
 	echo "Besked: " . $_POST['message'] . "\n";
 
 
+	// Build mail
 	$to = $_POST['email'];//"root@localhost.com";
 	$subject = 'Test Message';
 	$message = $_POST['message'];
@@ -37,6 +32,7 @@ if (!empty($_POST)) {
 	$headers .= "Importance: High\n";
 	$headers .= "From: bjarniolsen@gmail.com\r\n";
 
+	// Send mail
 	//mail($to, $subject, $message, $headers);
 
 }
