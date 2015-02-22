@@ -29,20 +29,54 @@ var gulp = require('gulp'),
  */
 gulp
 	.task('default', [
+		'css',
 		'js',
 		'view'
 	], function () {
 	    livereload.listen();
 
 	    // WATCH events
+	    // Watch CSS-folder(s) for changes
+	    gulp
+	        .watch('static/css/**/*.css', ['css'])
+			.on('change', watcherCallback);
 	    // Watch JS-folder(s) for changes
 	    gulp
 	        .watch('static/js/**/*.js', ['js'])
 			.on('change', watcherCallback);
-	    // Watch JS-folder(s) for changes
+	    // Watch VIEW-folder(s) for changes
 	    gulp
 	        .watch('index.php', ['view'])
 			.on('change', watcherCallback);
+	});
+
+
+/**
+ * CSS
+ *
+ * Set up task for CSS
+ */
+gulp
+	.task('css', function () {
+	    gulp.src('static/css/main.css')
+            //.pipe(plumber({
+                //errorHandler: onError
+            //}))
+    		// Uglify the javascript files into "m.min.js" 
+    		// and create a sourcemap file
+            /*.pipe(uglify('m.min.js', {
+                output: {
+                	beautify: true
+                },
+                compress: false,
+				outSourceMap: true,
+				sourceRoot: '../../',
+    		    mangle: false
+            }))*/
+        	//.pipe(plumber.stop())
+    		// Render the output into the /MIN folder
+    		//.pipe(gulp.dest('v3-html/min'))
+	        .pipe(livereload());
 	});
 
 

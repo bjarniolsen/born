@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="static/css/normalize.min.css">
-        <!--<link rel="stylesheet" href="static/css/main.css">-->
+		<link rel="stylesheet" href="static/css/main.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -53,9 +53,9 @@
 				<section aria-labelledby="section-heading-subscribe">
                     <h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
-                    <form action="subscribe.php" name="workshop" id="workshop" method="post">
+                    <form action="subscribe.php" name="workshops" id="workshop" method="post">
 						<fieldset>
-							<legend>Personlige oplysninger</legend>
+							<legend class="visuallyhidden">Personlige oplysninger</legend>
 							<label>
 								<span>Email adresse</span>
 								<input type="text" name="email" placeholder="ditnavn@mail.dk" />
@@ -67,19 +67,31 @@
 						</fieldset>
 
 						<fieldset>
-							<legend>Vælg workshop</legend>
+							<legend class="visuallyhidden">Vælg workshop</legend>
 							<label>
 								<input type="checkbox" name="workshop[0]" /> <!-- checked="checked"-->
 								<span>Vælg workshop 1</span>
 							</label>
-							<div class="form-group _hidden" id="workshop-group-1">
+							<div class="form-group" id="1">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="workshop[0][childname]" placeholder="Dit barns navn" />
+									<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="workshop[0][childage]">
+									<select name="workshop[0][0][childage]">
+										<option value="5">5 år</option> 
+										<option value="6">6 år</option>
+										<option value="7">7 år</option>
+									</select>
+								</label>
+								<label>
+									<span>Barnets navn</span>
+									<input type="text" name="workshop[0][1][childname]" placeholder="Dit barns navn" />
+								</label>
+								<label>
+									<span>Barnets alder</span>
+									<select name="workshop[0][1][childage]">
 										<option value="5">5 år</option> 
 										<option value="6">6 år</option>
 										<option value="7">7 år</option>
@@ -92,14 +104,14 @@
 								<input type="checkbox" name="workshop[1]" />
 								<span>Vælg workshop 2</span>
 							</label>
-							<div class="form-group _hidden" id="workshop-group-2">
+							<div class="form-group" id="2">
 								<label>
 									<span>Barnets navn</span>
-									<input type="text" name="workshop[1][childname]" placeholder="Dit barns navn" />
+									<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" />
 								</label>
 								<label>
 									<span>Barnets alder</span>
-									<select name="workshop[1][childage]">
+									<select name="workshop[1][0][childage]">
 										<option value="8">8 år</option> 
 										<option value="9">9 år</option>
 										<option value="10">10 år</option>
@@ -109,7 +121,7 @@
 							</div>
 						</fieldset>
 						<fieldset>
-							<legend>Personlig besked</legend>
+							<legend class="visuallyhidden">Personlig besked</legend>
 							<label>
 								<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
 								<textarea name="message" placeholder="Personlig besked"></textarea>

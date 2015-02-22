@@ -9,9 +9,18 @@ if (!empty($_POST)) {
 	foreach ($_POST['workshop'] as $workshop) {
 
 		echo "Workshop " . $i . "\n";
-		echo "Barnets navn: " . $workshop['childname'] . "\n";
-		echo "Barnets alder: " . $workshop['childage'] . "\n";
 
+		//print_r($workshop);
+		foreach ($workshop as $child) {
+			echo "Barnets navn: " . $child['childname'] . "\n";
+			echo "Barnets alder: " . $child['childage'] . "\n";
+		}
+		/*foreach ($workshop['childname'] as $childname) {
+			echo "Barnets navn: " . $childname . "\n";
+		}
+		foreach ($workshop['childage'] as $childage) {
+			echo "Barnets alder: " . $childage . "\n";
+		}*/
 		$i++;
 	}
 
@@ -28,7 +37,10 @@ if (!empty($_POST)) {
 	$headers .= "Importance: High\n";
 	$headers .= "From: bjarniolsen@gmail.com\r\n";
 
-	mail($to, $subject, $message, $headers);
+	//mail($to, $subject, $message, $headers);
 
 }
+
+//print_r($_POST);
+
 ?>

@@ -58,6 +58,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    transition: all 0.6s ease;
 }
 
 .wrapper {
@@ -153,6 +154,23 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+label {
+	display: block;
+	margin-top: 20px;
+}
+
+.form-group {
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height 0.6s ease;
+	-moz-transition: max-height 0.6s ease;
+	transition: max-height 0.6s ease;
+}
+
+.selected + .form-group {
+	max-height: 500px;
+}
 
 
 

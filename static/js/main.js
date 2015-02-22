@@ -18,11 +18,15 @@ S.Workshop = (function(win, doc, $) {
     }
 
     function addPerson(element) {
-    	//console.log(element);
+    	console.log(element);
     }
 
     function expandGroup(element) {
-    	//console.log(element);
+    	if ($(element).is(":checked")) {
+    		$(element).parent().addClass("selected");
+    	} else {
+    		$(element).parent().removeClass("selected");
+    	}
     }
 
     return {
