@@ -121,6 +121,11 @@
 						</div>
 					</form>
 
+					<div class="thank-you hide">
+						<h2>Tak for tilmeldingen</h2>
+						<p>Bla bla</p>
+					</div>
+
 				</section>
 
                 <aside>

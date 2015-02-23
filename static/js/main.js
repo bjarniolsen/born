@@ -10,6 +10,8 @@ S.Workshop = (function(win, doc, $) {
 			data: form.serializeArray(),
 			success: function(res) {
 				console.log(res);
+				$(form).addClass("hide");
+				$(".thank-you").removeClass("hide");
 			},
 			error: function(xhr, thrownError) {
 				console.log(xhr.responseText, thrownError);
@@ -37,7 +39,8 @@ S.Workshop = (function(win, doc, $) {
 			// and replace it with the new incremented number
     		var newAttribute = attribute.replace(/^(.*\[[0-9]+\].*)(\[[0-9]+\])(.*)$/, '$1[' + getLastNumber + ']$3');
     		// Add the new attribute to the cloned label child
-            newLabel.children("[name]").attr("name", newAttribute);
+            var child = newLabel.children("[name]").attr("name", newAttribute).val("");
+            
     		// Add new label right before the ADD PERSON link.
 			$(element).before(newLabel);
     	}

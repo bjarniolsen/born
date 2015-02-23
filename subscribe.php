@@ -1,4 +1,11 @@
 <?php
+
+// TODO 
+// [] Remember to check un filled fields !!!!
+// [] Add message to sassis mail.
+// [] Add sassis wording
+// [] Change headers From:
+
 if (!empty($_POST)) {
 
 	$i = 1;
