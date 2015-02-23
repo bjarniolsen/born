@@ -2,29 +2,47 @@
 if (!empty($_POST)) {
 
 	$i = 1;
-
-	echo "Email: " . $_POST['email'] . "\n";
-	echo "Telefon: " . $_POST['phone'] . "\n";
+	$numOfChildren = 0;
+	$price = $_POST['price'];
+	$message = "Tak for din tilmelding.\n\n";
+	$message .= "Du har tilmeldt ";
 
 	foreach ($_POST['workshop'] as $workshop) {
 
-		echo "Workshop " . $i . "\n";
+		$j = 1;
+		foreach ($workshop as $key => $child) {
 
-		foreach ($workshop as $child) {
-			echo "Barnets navn: " . $child['childname'] . "\n";
-			echo "Barnets alder: " . $child['childage'] . "\n";
+			$message .= $child['childname'] . " (". $child['childage'] . " år)";
+
+			if (count($workshop) > $j) {
+				$message .= " og ";
+			} else {
+				$message .= "";
+			}
+
+			$j++;
+			$numOfChildren++;
+		}
+
+		$message .= " til workshop " . $i;
+
+		if (count($workshop) > $i) {
+			$message .= ", samt ";
+		} else {
+			$message .= "\n\n";
 		}
 
 		$i++;
 	}
 
-	echo "Besked: " . $_POST['message'] . "\n";
-
+	//echo "Besked: " . $_POST['message'] . "\n";
+	$message .= "Du har tilmeldt " . $numOfChildren . " børn. Det bliver " . ($numOfChildren * $price) . " kr.\n\n";
+	echo $message;
 
 	// Build mail
 	$to = $_POST['email'];//"root@localhost.com";
 	$subject = 'Test Message';
-	$message = $_POST['message'];
+	//$message = $_POST['message'];
 	$headers = "MIME-Version: 1.0\n" ;
 	$headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"\n";
 	$headers .= "X-Priority: 1 (Highest)\n";
@@ -38,5 +56,7 @@ if (!empty($_POST)) {
 }
 
 //print_r($_POST);
+//echo "Email: " . $_POST['email'] . "\n";
+//echo "Telefon: " . $_POST['phone'] . "\n";
 
 ?>

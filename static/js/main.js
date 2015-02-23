@@ -17,17 +17,29 @@ S.Workshop = (function(win, doc, $) {
 		});
     }
 
-    function prepareLabels(formGroups) {
-		$.each(formGroups, function(index, group) {
-			var name = $(group).find("label").children("[name]").attr("name");
-			console.log(group, name);
-		});
-    }
-
     function addPerson(element) {
-    	var workshopID = $(element).parent().attr("id");
-    	for (var i=0; i<labels.length; i++) {
-    		var name = $(labels[i]).children("[name]").attr("name");
+    	// Get the preceding sibling LABELS - slice limits to 2
+    	// Jquery reverses the returned elements,
+    	// so we fix that with reverse method og Array.
+    	var prevLabels = Array.prototype.reverse.call( $(element).prevAll("label").slice(0, 2) );
+
+    	// Loop labels - get children name attributes
+    	// Clone labels and give them new attributes
+    	for (var i=0; i<prevLabels.length; i++) {
+    		var attribute = $(prevLabels[i]).children("[name]").attr("name");
+			var newLabel = $(prevLabels[i]).clone();
+
+			var getNumbers = attribute.match(/\d+/g);
+			var getLastNumber = getNumbers[getNumbers.length-1];
+			// Increment number
+			getLastNumber++;
+			// Find second number in attribute string 'workshop[0][0]xxx'
+			// and replace it with the new incremented number
+    		var newAttribute = attribute.replace(/^(.*\[[0-9]+\].*)(\[[0-9]+\])(.*)$/, '$1[' + getLastNumber + ']$3');
+    		// Add the new attribute to the cloned label child
+            newLabel.children("[name]").attr("name", newAttribute);
+    		// Add new label right before the ADD PERSON link.
+			$(element).before(newLabel);
     	}
     }
 
@@ -47,8 +59,6 @@ S.Workshop = (function(win, doc, $) {
 				formGroups = $form.find(".form-group"),
 				addPersonLink = formGroups.find(".add-person");
 
-			prepareLabels(formGroups);
-
         	// set up events
         	$form.on("submit", function(event) {
 				event.preventDefault();
@@ -58,6 +68,7 @@ S.Workshop = (function(win, doc, $) {
         		expandGroup(this);
         	});
         	addPersonLink.on("click", function(event) {
+        		event.preventDefault();
         		addPerson(this);
         	});
         }

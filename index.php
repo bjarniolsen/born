@@ -54,6 +54,7 @@
                     <h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
                     <form action="subscribe.php" name="workshops" id="workshop" method="post">
+						<input type="hidden" name="price" value="50"/>
 						<fieldset>
 							<legend class="visuallyhidden">Personlige oplysninger</legend>
 							<label>
