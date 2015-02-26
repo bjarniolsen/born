@@ -101,7 +101,7 @@ if (!empty($_POST)) {
 	mail($to, $subject, $message, $headers);
 
 	// Sassis mail
-	mail("root@localhost.com", "Tilmelding til workshops", $tosassi, $headers);
+	mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 }
 
 //print_r($_POST);
