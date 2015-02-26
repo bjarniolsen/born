@@ -70,7 +70,7 @@
 						<fieldset>
 							<legend class="visuallyhidden">Vælg workshop</legend>
 							<label>
-								<input type="checkbox" name="workshop[0]" /> <!-- checked="checked"-->
+								<input type="checkbox" name="checkbox[0]" /> <!-- checked="checked"-->
 								<span>Vælg workshop 1</span>
 							</label>
 							<div class="form-group" id="0">
@@ -90,7 +90,7 @@
 							</div>
 
 							<label>
-								<input type="checkbox" name="workshop[1]" />
+								<input type="checkbox" name="checkbox[1]" />
 								<span>Vælg workshop 2</span>
 							</label>
 							<div class="form-group" id="1">

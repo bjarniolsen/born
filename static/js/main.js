@@ -9,9 +9,12 @@ S.Workshop = (function(win, doc, $) {
 			type: "POST",
 			data: form.serializeArray(),
 			success: function(res) {
-				console.log(res);
-				$(form).addClass("hide");
-				$(".thank-you").removeClass("hide");
+				if (res === "error") {
+					console.log("der skal ske noget her");
+				} else {
+					$(form).addClass("hide");
+					$(".thank-you").removeClass("hide").find("p").html(res.split("\n").join("<br />"));
+				}
 			},
 			error: function(xhr, thrownError) {
 				console.log(xhr.responseText, thrownError);
