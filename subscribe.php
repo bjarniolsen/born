@@ -74,7 +74,7 @@ if (!empty($_POST)) {
 			$message .= "Du modtager en bekræftelse på mail eller sms.\n\n";
 			$message .= "I tilfælde af, at holdet ikke kan oprettes ved for få tilmeldte, refunderes din indbetaling.\n";
 			$message .= "Husk praktisk tøj som godt må få lidt maling på + evt en drikkedunk og et stykke brød/frugt til pausen.\n\n";
-			$message .= "Med Venlig hilsen Sassi Bischoff\n";
+			$message .= "Med Venlig hilsen\n Sassi Bischoff\n";
 
 			echo $message;
 
