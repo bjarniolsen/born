@@ -47,22 +47,18 @@
 					<section aria-labelledby="section-heading-ws-1">
 						<p>Elsker dit barn at tegne og male? - Så er denne workshop lige sagen!</p>
 						<p>Vi skal arbejde med tusch og smukke akvarelfarver. Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog. Hvert barn får minimum ét færdigt billede med hjem. Der kræves ingen forudsætninger, kun lyst til at tegne/male.<br/>Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.</p>
-						<p>Intro-pris: 225 kr. pr. deltager.</p>
+						<p>Intro-pris: 185 kr. pr. deltager.</p>
 						<p>Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>Jeg foretrækker at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat</p>
-						<p></p>
-						<p></p>
-						<p></p>
-						<p></p>
 					</section>
 
 					<section aria-labelledby="section-heading-ws-1">
                     	<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
-						<p>For de 5-7 årige<br/>Søndag d. 22. marts 2015 kl. 10-13.00</p>
+						<p>For de 5-7 årige<br/>Lørdag d. 28. marts 2015 kl. 10-13.00</p>
 					</section>
 
 					<section aria-labelledby="section-heading-ws-2">
                     	<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
-						<p>For de 8-10 årige<br/>Søndag d. 22. marts 2015 kl. 14-17.00</p>
+						<p>For de 8-10 årige<br/>Lørdag d. 28. marts 2015 kl. 14-17.00</p>
 					</section>
 
 					<section aria-labelledby="section-heading-hold-1">
@@ -170,10 +166,39 @@
 
                 <aside class="clearfix">
                     <h3 role="heading" aria-level="3">Sassi Bischoff</h3>
-                    <p><img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+					<img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />
+                    <p>Jeg er uddannet billedkunstformidler & håndarbejdslærer (billedlinien)</p>
+					<p>Jeg arbejder som freelance billedkunstner og udstiller blandt andet mine billeder i gallerier og kunstforeninger.</p> 
+					<p>Mine jobaktiviteter har i øvrigt altid koncentreret sig om billedkunst og pædagogiske fag, særligt arbejde med børn og unge. Her igennem har jeg fået mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.</p>
+					
                 </aside>
 
             </div> <!-- #main -->
+
+            <aside class="wrapper clearfix">
+                <h3 role="heading" aria-level="3">Galleri</h3>
+				<div class="gallery clearfix">
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-1.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-1.jpg" alt="" />
+					</a>
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-2.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
+					</a>
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-3.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+					</a>
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-4.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
+					</a>
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-5.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
+					</a>
+					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-6.jpg" target="_blank">
+						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-6.jpg" alt="" />
+					</a>
+				</div>
+			</aside>
+
         </main> <!-- #main-container -->
 
         <div class="footer-container">
