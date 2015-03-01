@@ -236,6 +236,21 @@ label > input[type="checkbox"] {
 label > input[type="checkbox"] + span {
 	line-height: 1;
 }
+.form-group {
+	padding-left: 24px;
+}
+label > select {
+	display: block;
+	max-width: 50%;
+	min-width: 100px;
+	padding: 10px;
+	border: 1px solid #a0a0a0;
+	border-radius: 3px;
+}
+.add-person {
+	display: block;
+	margin-top: 10px;
+}
 label > textarea {
 	display: block;
 	width: 80%;
