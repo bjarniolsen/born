@@ -1,14 +1,4 @@
 <?php
-/*
- 
- TODO 
- [*] Remember to check un filled fields !!!!
- [*] Add message to sassis mail.
- [*] Add sassis wording
- [*] Change headers From:
- 
-*/
-
 if (!empty($_POST)) {
 
 	$numOfChildren = 0;
@@ -98,7 +88,7 @@ if (!empty($_POST)) {
 			mail($to, $subject, $message, $headers);
 
 			// Sassis mail
-			//mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
+			mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 
 		}
 	}
