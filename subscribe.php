@@ -39,7 +39,7 @@ if (!empty($_POST)) {
 					$numOfChildren++;
 
 				} else {
-					echo $message = "error: " . $child['childname'] . " - " . $child['childage'];
+					echo $message = "error";
 					break 2;
 				}
 			}
@@ -95,7 +95,4 @@ if (!empty($_POST)) {
 }
 
 //print_r($_POST);
-//echo "Email: " . $_POST['email'] . "\n";
-//echo "Telefon: " . $_POST['phone'] . "\n";
-
 ?>

@@ -9,10 +9,10 @@ S.Workshop = (function(win, doc, $) {
 			type: "POST",
 			data: form.serializeArray(),
 			success: function(res) {
+				$(form).addClass("hide");
 				if (res === "error") {
-					console.log("der skal ske noget her", res);
+					$(".error-message").removeClass("hide");
 				} else {
-					$(form).addClass("hide");
 					$(".thank-you").removeClass("hide").find("p").html(res.split("\n").join("<br />"));
 				}
 			},
@@ -103,15 +103,23 @@ S.Workshop = (function(win, doc, $) {
 		});
     }
 
+	function errorBox(errorMessageBox, form) {
+		errorMessageBox.addClass("hide");
+		form.removeClass("hide");
+	}
+
     return {
         init: function() {
         	// cache dom
         	var $form = $("form"),
 				checkboxes = $form.find('input[type="checkbox"]'),
 				formGroups = $form.find(".form-group"),
-				addPersonLink = formGroups.find(".add-person");
+				addPersonLink = formGroups.find(".add-person"),
+				errorMessageBox = $(".error-message");
 
+			// set up validation on form fields
 			validate($form, false);
+
         	// set up events
         	$form.on("submit", function(event) {
 				event.preventDefault();
@@ -123,6 +131,10 @@ S.Workshop = (function(win, doc, $) {
         	addPersonLink.on("click", function(event) {
         		event.preventDefault();
         		addPerson(this);
+        	});
+        	errorMessageBox.find("button").on("click", function(event) {
+        		event.preventDefault();
+        		errorBox(errorMessageBox, $form);
         	});
         }
 	};

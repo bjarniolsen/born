@@ -160,6 +160,12 @@
 							<p>Bla bla</p>
 						</div>
 
+						<div class="error-message hide">
+							<h2>Noget gik desværre galt</h2>
+							<p>Dumme dumme teknik! Prøv venligst igen, så vi kan få meldt de unger til.</p>
+							<p><button>Tilmeld</button></p>
+						</div>
+
 					</section>
 
 				</div>

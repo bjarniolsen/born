@@ -192,11 +192,23 @@ form {
 	opacity: 1;
 	height: auto;
 }
+.error-message,
 .thank-you {
 	opacity: 1;
 	height: auto;
 	padding: 20px;
 	border: 1px solid #e5e5e5;
+}
+.error-message {
+	font-size: 1.1em;
+}
+.error-message button {
+	padding: 14px 30px;
+	background: none;
+	background-color: #01579B;
+	color: white;
+	border: none;
+	border-bottom: 2px solid #9FA8DA;
 }
 .hide {
 	opacity: 0;
