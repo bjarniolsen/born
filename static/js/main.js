@@ -10,7 +10,7 @@ S.Workshop = (function(win, doc, $) {
 			data: form.serializeArray(),
 			success: function(res) {
 				if (res === "error") {
-					console.log("der skal ske noget her");
+					console.log("der skal ske noget her", res);
 				} else {
 					$(form).addClass("hide");
 					$(".thank-you").removeClass("hide").find("p").html(res.split("\n").join("<br />"));
@@ -46,15 +46,61 @@ S.Workshop = (function(win, doc, $) {
             
     		// Add new label right before the ADD PERSON link.
 			$(element).before(newLabel);
+
+            // revalidate form
+    		validate($("form"), true);
     	}
     }
 
     function expandGroup(element) {
     	if ($(element).is(":checked")) {
-    		$(element).parent().addClass("selected");
+    		var parentElement = $(element).parent();
+    		parentElement.next(".form-group").find("input, select, a").each(function() {
+    			if ($(this).is("input")) {
+    				setTimeout(function() {
+    					$(this).focus().removeClass("error");
+    				}.bind($(this)), 0);
+    			}
+    			if ($(this).hasClass("add-person")) {
+    				$(this).removeAttr("tabindex");
+    			} else {
+    				$(this).prop("disabled", false);
+    			}
+    		});
+    		parentElement.addClass("selected");
     	} else {
     		$(element).parent().removeClass("selected");
     	}
+
+        // revalidate form
+    	validate($("form"), true);
+    }
+
+    function validate(form, checkFields) {
+		$(form).find("input").each(function() {
+			if(checkFields) {
+				if($(this).val() === "") {
+					$(this).addClass("error").attr("placeholder", "Udfyld venligst dette felt");
+    				//$(form).find('input[type="submit"]').prop("disabled", true).addClass("disabled");
+				} else {
+					$(this).removeClass("error");
+    				//$(form).find('input[type="submit"]').prop("disabled", false).removeClass("disabled");
+				}
+			}
+			$(this).on("blur", function() {
+				if($(this).val() === "") {
+					$(this).addClass("error").attr("placeholder", "Udfyld venligst dette felt");
+    				//$(form).find('input[type="submit"]').prop("disabled", false).addClass("disabled");
+				} else {
+					$(this).removeClass("error");
+				}
+			}).on("keyup", function() {
+				if($(this).val() !== "") {
+					$(this).removeClass("error");
+    				//$(form).find('input[type="submit"]').prop("disabled", true).removeClass("disabled");
+				}
+			});
+		});
     }
 
     return {
@@ -65,6 +111,7 @@ S.Workshop = (function(win, doc, $) {
 				formGroups = $form.find(".form-group"),
 				addPersonLink = formGroups.find(".add-person");
 
+			validate($form, false);
         	// set up events
         	$form.on("submit", function(event) {
 				event.preventDefault();

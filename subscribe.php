@@ -3,7 +3,7 @@
  
  TODO 
  [*] Remember to check un filled fields !!!!
- [] Add message to sassis mail.
+ [*] Add message to sassis mail.
  [*] Add sassis wording
  [*] Change headers From:
  
@@ -49,7 +49,7 @@ if (!empty($_POST)) {
 					$numOfChildren++;
 
 				} else {
-					echo $message = "error";
+					echo $message = "error: " . $child['childname'] . " - " . $child['childage'];
 					break 2;
 				}
 			}
@@ -79,29 +79,29 @@ if (!empty($_POST)) {
 			echo $message;
 
 			$tosassi .= "Antal tilmeldinger er " . $numOfChildren . " a " . $price . " kr. Samlet beløb: " . ($numOfChildren * $price) . " kr.\n\n";
+			$tosassi .= "Personlig besked:\n";
+			$tosassi .= "\"" . $_POST['message'] . "\"\n";
+
+
+			// Build mail
+			$to = "root@localhost.com";//$_POST['email'];
+			$subject = 'Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff';
+			$message = $message;
+			$headers = "MIME-Version: 1.0\n" ;
+			$headers .= "Content-Type: text/plain; charset=\"UTF-8\"\n";
+			$headers .= "X-Priority: 1 (Highest)\n";
+			$headers .= "X-MSMail-Priority: High\n";
+			$headers .= "Importance: High\n";
+			$headers .= "From: sassibis@hotmail.com\r\n";
+
+			// Send mail
+			mail($to, $subject, $message, $headers);
+
+			// Sassis mail
+			//mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
+
 		}
 	}
-
-	$tosassi .= "Personlig besked:\n";
-	$tosassi .= "\"" . $_POST['message'] . "\"\n";
-
-
-	// Build mail
-	$to = $_POST['email'];//"root@localhost.com";
-	$subject = 'Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff';
-	$message = $message;
-	$headers = "MIME-Version: 1.0\n" ;
-	$headers .= "Content-Type: text/plain; charset=\"UTF-8\"\n";
-	$headers .= "X-Priority: 1 (Highest)\n";
-	$headers .= "X-MSMail-Priority: High\n";
-	$headers .= "Importance: High\n";
-	$headers .= "From: sassibis@hotmail.com\r\n";
-
-	// Send mail
-	mail($to, $subject, $message, $headers);
-
-	// Sassis mail
-	mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 }
 
 //print_r($_POST);

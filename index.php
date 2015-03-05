@@ -88,16 +88,16 @@
                     	<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
                     	<form action="subscribe.php" name="workshops" id="workshop" method="post">
-							<input type="hidden" name="price" value="50"/>
+							<input type="hidden" name="price" value="185"/>
 							<fieldset>
 								<legend class="visuallyhidden">Personlige oplysninger</legend>
 								<label>
 									<span>Email adresse</span>
-									<input type="text" name="email" placeholder="ditnavn@mail.dk" />
+									<input type="text" name="email" placeholder="ditnavn@mail.dk" required />
 								</label>
 								<label>
 									<span>Mobilnummer</span>
-									<input type="text" name="phone" placeholder="12345678" />
+									<input type="text" name="phone" placeholder="12345678" required />
 								</label>
 							</fieldset>
 
@@ -110,17 +110,17 @@
 								<div class="form-group" id="0">
 									<label>
 										<span>Barnets navn</span>
-										<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" />
+										<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
 									</label>
 									<label>
 										<span>Barnets alder</span>
-										<select name="workshop[0][0][childage]">
+										<select name="workshop[0][0][childage]" disabled="disabled">
 											<option value="5">5 år</option> 
 											<option value="6">6 år</option>
 											<option value="7">7 år</option>
 										</select>
 									</label>
-									<a href="#" class="add-person">tilmeld flere børn</a>
+									<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
 								</div>
 
 								<label>
@@ -130,17 +130,17 @@
 								<div class="form-group" id="1">
 									<label>
 										<span>Barnets navn</span>
-										<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" />
+										<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
 									</label>
 									<label>
 										<span>Barnets alder</span>
-										<select name="workshop[1][0][childage]">
+										<select name="workshop[1][0][childage]" disabled="disabled">
 											<option value="8">8 år</option> 
 											<option value="9">9 år</option>
 											<option value="10">10 år</option>
 										</select>
 									</label>
-									<a href="#" class="add-person">tilmeld flere børn</a>
+									<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
 								</div>
 							</fieldset>
 							<fieldset>
@@ -208,7 +208,8 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="static/js/vendor/jquery.validate.min.js"></script>
 
         <script src="static/js/main.js"></script>
 
@@ -223,17 +224,3 @@
         </script>
     </body>
 </html>
-<!--
-<label>
-	<span>Barnets navn</span>
-	<input type="text" name="workshop[0][1][childname]" placeholder="Dit barns navn" />
-</label>
-<label>
-	<span>Barnets alder</span>
-	<select name="workshop[0][1][childage]">
-		<option value="5">5 år</option> 
-		<option value="6">6 år</option>
-		<option value="7">7 år</option>
-	</select>
-</label>
--->

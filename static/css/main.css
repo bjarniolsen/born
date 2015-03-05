@@ -229,6 +229,18 @@ label > input[type="text"] {
 label > input[type="text"]:focus {
 	border-color: #01579B;
 }
+label > input[type="text"].error,
+label > input[type="text"].error:focus {
+	background-color: #FFE9E8;
+	border: 1px solid red;
+}
+label > input[type="text"].error::input-placeholder,
+label > input[type="text"].error::-webkit-input-placeholder,
+label > input[type="text"].error::-moz-input-placeholder,
+label > input[type="text"].error:-moz-input-placeholder,
+label > input[type="text"].error:-ms-input-placeholder {
+	color: red;
+}
 label > input[type="checkbox"] {
 	float: left;
 	margin-right: 10px;
@@ -267,6 +279,11 @@ label > textarea {
 	color: white;
 	border: none;
 	border-bottom: 2px solid #9FA8DA;
+}
+
+.buttons > input[type="submit"].disabled {
+	color: #666;
+	background-color: lightgrey;
 }
 
 .form-group {
