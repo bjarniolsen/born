@@ -74,7 +74,7 @@ if (!empty($_POST)) {
 
 
 			// Build mail
-			$to = "root@localhost.com";//$_POST['email'];
+			$to = $_POST['email']; //"root@localhost.com";
 			$subject = 'Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff';
 			$message = $message;
 			$headers = "MIME-Version: 1.0\n" ;
