@@ -23,195 +23,221 @@
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
     </head>
-    <body>
+    <body>	
 
-        <div class="header-container">
-            <header class="wrapper clearfix" role="banner">
-                <h1 class="title" role="heading" aria-level="1">Billedkunst for børn v/Sassi Bischoff</h1>
-				<p class="subtitle">Kulturstationen i Vanløse, spejlsalen</p>
-                <!--<nav role="navigation">
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>-->
-            </header>
-        </div>
+		<div class="site-wrapper">
 
-		<main class="main-container" role="main">
-            <div class="main wrapper clearfix">
+        	<div class="header-container">
+            	<header class="wrapper clearfix" role="banner">
+                	<h1 class="title" role="heading" aria-level="1">Billedkunst for børn v/Sassi Bischoff</h1>
+					<p class="subtitle">Kulturstationen i Vanløse, spejlsalen</p>
+                	<!--<nav role="navigation">
+                    	<ul>
+                        	<li><a href="#">nav ul li a</a></li>
+                        	<li><a href="#">nav ul li a</a></li>
+                        	<li><a href="#">nav ul li a</a></li>
+                    	</ul>
+                	</nav>-->
+            	</header>
+        	</div>
 
-				<div class="main-content">
+			<main class="main-container" role="main">
+            	<div class="main wrapper clearfix">
 
-					<section aria-labelledby="section-heading-ws-1">
-						<p>Elsker dit barn at tegne og male? - Så er denne workshop lige sagen!</p>
-						<p>Vi skal arbejde med tusch og smukke akvarelfarver. Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog. Hvert barn får minimum ét færdigt billede med hjem. Der kræves ingen forudsætninger, kun lyst til at tegne/male.<br/>Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.</p>
-						<p>Intro-pris: 185 kr. pr. deltager.</p>
-						<p>Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>Jeg foretrækker at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat</p>
-					</section>
+					<div class="main-content">
 
-					<section aria-labelledby="section-heading-ws-1">
-                    	<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
-						<p>For de 5-7 årige<br/>Lørdag d. 28. marts 2015 kl. 10-13.00</p>
-					</section>
-
-					<section aria-labelledby="section-heading-ws-2">
-                    	<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
-						<p>For de 8-10 årige<br/>Lørdag d. 28. marts 2015 kl. 14-17.00</p>
-					</section>
-
-					<section aria-labelledby="section-heading-hold-1">
-                    	<h2 id="section-heading-hold-1" role="heading" aria-level="2">Hold 1</h2>
-						<p>
-							Billedkunst for børn 6-10 år 4 onsdage i april: d. 8. 15. 22. og 29. april kl. 15.00-17.00.<br/>
-							Vi skal arbejde med enkelte teknikker, tegning, akvarel og collage. Børnene inspireres til at finde motiver og lege med farvesammensætning. Der kræves ingen forudsætninger, kun lyst til at tegne/male.
-						</p>
-						<blockquote>
-							Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.<br/>
-							Intro-pris: 525 kr pr. deltager.<br/>
-							Bemærk! Prisen er inkl. alle materialer.<br/>
-						</blockquote>
-						<p>
-							Tilmelding kan ske over facebook, hjemmeside, mail eller telefon senest d.???<br/>
-							Min. 6 deltagere på hvert hold max. 12.<br/>
-							Betaling kan ske over mobilpay eller via kontooverførsel.<br/>
-							Ved tilmelding på hjemmesiden modtager du en mail med oplysninger omkring betaling.<br/>
-							Mærk din indbetaling med telefonnummer eller mailadresse.<br/>
-							Når din betaling er registreret, er din tilmelding gennemført.<br/>
-							Du modtager en bekræftelse på mail eller sms.<br/>
-							I tilfælde af, at holdet ikke kan oprettes ved for få tilmeldte, refunderes din indbetaling.<br/>
-						</p>
-					</section>
-
-					<section aria-labelledby="section-heading-subscribe">
-                    	<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
-
-                    	<form action="subscribe.php" name="workshops" id="workshop" method="post">
-							<input type="hidden" name="price" value="185"/>
-							<fieldset>
-								<legend class="visuallyhidden">Personlige oplysninger</legend>
-								<label>
-									<span>Email adresse</span>
-									<input type="text" name="email" placeholder="ditnavn@mail.dk" required />
-								</label>
-								<label>
-									<span>Mobilnummer</span>
-									<input type="text" name="phone" placeholder="12345678" required />
-								</label>
-							</fieldset>
-
-							<fieldset>
-								<legend class="visuallyhidden">Vælg workshop</legend>
-								<label>
-									<input type="checkbox" name="checkbox[0]" /> <!-- checked="checked"-->
-									<span>Vælg workshop 1</span>
-								</label>
-								<div class="form-group" id="0">
-									<label>
-										<span>Barnets navn</span>
-										<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
-									</label>
-									<label>
-										<span>Barnets alder</span>
-										<select name="workshop[0][0][childage]" disabled="disabled">
-											<option value="5">5 år</option> 
-											<option value="6">6 år</option>
-											<option value="7">7 år</option>
-										</select>
-									</label>
-									<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
+						<section aria-labelledby="section-heading-ws-1" class="boxed-band even">
+							<div class="clearfix">
+								<div class="image-wrap show-right">
+									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
 								</div>
-
-								<label>
-									<input type="checkbox" name="checkbox[1]" />
-									<span>Vælg workshop 2</span>
-								</label>
-								<div class="form-group" id="1">
-									<label>
-										<span>Barnets navn</span>
-										<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
-									</label>
-									<label>
-										<span>Barnets alder</span>
-										<select name="workshop[1][0][childage]" disabled="disabled">
-											<option value="8">8 år</option> 
-											<option value="9">9 år</option>
-											<option value="10">10 år</option>
-										</select>
-									</label>
-									<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
-								</div>
-							</fieldset>
-							<fieldset>
-								<legend class="visuallyhidden">Personlig besked</legend>
-								<label>
-									<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
-									<textarea name="message" placeholder="Personlig besked"></textarea>
-								</label>
-							</fieldset>
-							<div class="buttons">
-								<input type="submit" value="Tilmeld" />
+								<h2>Elsker dit barn at tegne og male? - Så er denne workshop lige sagen!</h2>
+								<p>Vi skal arbejde med tusch og smukke akvarelfarver. Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog. Hvert barn får minimum ét færdigt billede med hjem. Der kræves ingen forudsætninger, kun lyst til at tegne/male.<br/>Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.</p>
+								<p>Intro-pris: 185 kr. pr. deltager.</p>
+								<p>Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>Jeg foretrækker at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat</p>
 							</div>
-						</form>
+						</section>
 
-						<div class="thank-you hide">
-							<h2>Tak for tilmeldingen</h2>
-							<p>Bla bla</p>
-						</div>
+						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd">
+							<div class="clearfix">
+								<div class="image-wrap show-left">
+									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
+								</div>
+                    			<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
+								<p>For de 5-7 årige<br/>Lørdag d. 28. marts 2015 kl. 10-13.00</p>
+							</div>
+						</section>
 
-						<div class="error-message hide">
-							<h2>Noget gik desværre galt</h2>
-							<p>Dumme dumme teknik! Prøv venligst igen, så vi kan få meldt de unger til.</p>
-							<p><button>Tilmeld</button></p>
-						</div>
+						<section aria-labelledby="section-heading-ws-2" class="boxed-band even">
+							<div class="clearfix">
+								<div class="image-wrap show-right">
+									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+								</div>
+                    			<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
+								<p>For de 8-10 årige<br/>Lørdag d. 28. marts 2015 kl. 14-17.00</p>
+							</div>
+						</section>
 
-					</section>
+						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd">
+							<div class="clearfix">
+                    			<h2 id="section-heading-hold-1" role="heading" aria-level="2">Hold 1</h2>
+								<p>
+									Billedkunst for børn 6-10 år 4 onsdage i april: d. 8. 15. 22. og 29. april kl. 15.00-17.00.<br/>
+									Vi skal arbejde med enkelte teknikker, tegning, akvarel og collage. Børnene inspireres til at finde motiver og lege med farvesammensætning. Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+								</p>
+								<blockquote>
+									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.<br/>
+									Intro-pris: 525 kr pr. deltager.<br/>
+									Bemærk! Prisen er inkl. alle materialer.<br/>
+								</blockquote>
+								<p>
+									Tilmelding kan ske over facebook, hjemmeside, mail eller telefon senest d.???<br/>
+									Min. 6 deltagere på hvert hold max. 12.<br/>
+									Betaling kan ske over mobilpay eller via kontooverførsel.<br/>
+									Ved tilmelding på hjemmesiden modtager du en mail med oplysninger omkring betaling.<br/>
+									Mærk din indbetaling med telefonnummer eller mailadresse.<br/>
+									Når din betaling er registreret, er din tilmelding gennemført.<br/>
+									Du modtager en bekræftelse på mail eller sms.<br/>
+									I tilfælde af, at holdet ikke kan oprettes ved for få tilmeldte, refunderes din indbetaling.<br/>
+								</p>
+							</div>
+						</section>
 
-				</div>
+						<section aria-labelledby="section-heading-subscribe" class="boxed-band even">
+                    		<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
-                <aside class="clearfix">
-                    <h3 role="heading" aria-level="3">Sassi Bischoff</h3>
-					<img src="static/img/sassi-bischoff-sm.jpg" alt="Sassi Bischoff" width="200" height="297" />
-                    <p>Jeg er uddannet billedkunstformidler & håndarbejdslærer (billedlinien)</p>
-					<p>Jeg arbejder som freelance billedkunstner og udstiller blandt andet mine billeder i gallerier og kunstforeninger.</p> 
-					<p>Mine jobaktiviteter har i øvrigt altid koncentreret sig om billedkunst og pædagogiske fag, særligt arbejde med børn og unge. Her igennem har jeg fået mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.</p>
-					
-                </aside>
+                    		<form action="subscribe.php" name="workshops" id="workshop" method="post">
+								<input type="hidden" name="price" value="185"/>
+								<fieldset>
+									<legend class="visuallyhidden">Personlige oplysninger</legend>
+									<label>
+										<span>Email adresse</span>
+										<input type="text" name="email" placeholder="ditnavn@mail.dk" required />
+									</label>
+									<label>
+										<span>Mobilnummer</span>
+										<input type="text" name="phone" placeholder="12345678" required />
+									</label>
+								</fieldset>
 
-            </div> <!-- #main -->
+								<fieldset>
+									<legend class="visuallyhidden">Vælg workshop</legend>
+									<label>
+										<input type="checkbox" name="checkbox[0]" /> <!-- checked="checked"-->
+										<span>Vælg workshop 1</span>
+									</label>
+									<div class="form-group" id="0">
+										<label>
+											<span>Barnets navn</span>
+											<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+										</label>
+										<label>
+											<span>Barnets alder</span>
+											<select name="workshop[0][0][childage]" disabled="disabled">
+												<option value="5">5 år</option> 
+												<option value="6">6 år</option>
+												<option value="7">7 år</option>
+											</select>
+										</label>
+										<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
+									</div>
 
-            <aside class="wrapper clearfix">
-                <h3 role="heading" aria-level="3">Galleri</h3>
-				<div class="gallery clearfix">
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-1.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-1.jpg" alt="" />
-					</a>
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-2.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
-					</a>
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-3.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
-					</a>
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-4.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
-					</a>
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-5.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
-					</a>
-					<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-6.jpg" target="_blank">
-						<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-6.jpg" alt="" />
-					</a>
-				</div>
-			</aside>
+									<label>
+										<input type="checkbox" name="checkbox[1]" />
+										<span>Vælg workshop 2</span>
+									</label>
+									<div class="form-group" id="1">
+										<label>
+											<span>Barnets navn</span>
+											<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+										</label>
+										<label>
+											<span>Barnets alder</span>
+											<select name="workshop[1][0][childage]" disabled="disabled">
+												<option value="8">8 år</option> 
+												<option value="9">9 år</option>
+												<option value="10">10 år</option>
+											</select>
+										</label>
+										<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend class="visuallyhidden">Personlig besked</legend>
+									<label>
+										<span>Skriv eventuelt en besked hvis du vil tilføje noget...</span>
+										<textarea name="message" placeholder="Personlig besked"></textarea>
+									</label>
+								</fieldset>
+								<div class="buttons">
+									<input type="submit" value="Tilmeld" />
+								</div>
+							</form>
 
-        </main> <!-- #main-container -->
+							<div class="thank-you hide">
+								<h2>Tak for tilmeldingen</h2>
+								<p>Bla bla</p>
+							</div>
 
-        <div class="footer-container">
-            <footer class="wrapper" role="contentinfo">
-                <h3 role="heading" aria-level="3">footer</h3>
-            </footer>
-        </div>
+							<div class="error-message hide">
+								<h2>Noget gik desværre galt</h2>
+								<p>Dumme dumme teknik! Prøv venligst igen, så vi kan få meldt de unger til.</p>
+								<p><button>Tilmeld</button></p>
+							</div>
+
+						</section>
+
+                		<aside class="boxed-band odd">
+							<div class="clearfix">
+								<div class="image-wrap show-left">
+									<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
+								</div>
+                    			<h2 role="heading" aria-level="2">Sassi Bischoff</h2>
+                    			<p>Jeg er uddannet billedkunstformidler & håndarbejdslærer (billedlinien)</p>
+								<p>Jeg arbejder som freelance billedkunstner og udstiller blandt andet mine billeder i gallerier og kunstforeninger.</p> 
+								<p>Mine jobaktiviteter har i øvrigt altid koncentreret sig om billedkunst og pædagogiske fag, særligt arbejde med børn og unge. Her igennem har jeg fået mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.</p>
+							</div>
+                		</aside>
+
+            			<aside class="boxed-band even">
+							<div class="clearfix">
+                				<h2 role="heading" aria-level="2">Galleri</h2>
+								<div class="gallery clearfix">
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-1.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-1.jpg" alt="" />
+									</a>
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-2.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
+									</a>
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-3.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+									</a>
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-4.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
+									</a>
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-5.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
+									</a>
+									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-6.jpg" target="_blank">
+										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-6.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</aside>
+
+					</div>
+
+            	</div> <!-- #main -->
+
+        	</main> <!-- #main-container -->
+
+        	<div class="footer-container">
+            	<footer class="wrapper" role="contentinfo">
+                	<h3 role="heading" aria-level="3">footer</h3>
+            	</footer>
+        	</div>
+
+    	</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
