@@ -1,6 +1,7 @@
 <?php
 if (!empty($_POST)) {
 
+	$workshopType = "";
 	$numOfChildren = 0;
 	$price = $_POST['price'];
 	$message = "Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff.\n";
@@ -44,8 +45,10 @@ if (!empty($_POST)) {
 				}
 			}
 
-			$message .= " til workshop " . ($index + 1);
-			$tosassi .= " til workshop " . ($index + 1);
+			$workshopType = $index === 2 ? "Billedkunsthold 1" : "Workshop" . ($index + 1);
+
+			$message .= " til " . $workshopType;
+			$tosassi .= " til " . $workshopType;
 
 			if (count($_POST['checkbox']) > $index + 1) {
 				$message .= ", samt ";
@@ -85,10 +88,10 @@ if (!empty($_POST)) {
 			$headers .= "From: sassibis@hotmail.com\r\n";
 
 			// Send mail
-			mail($to, $subject, $message, $headers);
+			//mail($to, $subject, $message, $headers);
 
 			// Sassis mail
-			mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
+			//mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 
 		}
 	}

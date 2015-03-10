@@ -198,23 +198,36 @@ body {
 	height: 233px;
 	background: url("../img/sassi-logo.gif") left center no-repeat;
 }
+.title > span {
+	font-size: 0.7em;
+}
 .subtitle {
-	margin-top: 10px;
+	margin-top: 8px;
 	padding-left: 340px;
     font-family: 'titilliumthin_upright', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    line-height: 1;
 }
 
 h2 {
+	margin-bottom: 4px;
 	font-family: 'titilliumlight', sans-serif;
 	font-size: 2.2em;
 	line-height: 1.2;
 	color: #01579B;
 }
 
+.manchet {
+	margin-top: 4px;
+	font-family: 'titilliumlight', sans-serif;
+	font-size: 1.6em;
+	line-height: 1;
+	color: #01579B;
+}
+
 p, blockquote {
 	font-size: 1.2em;
-	line-height: 1.6;
+	line-height: 1.4;
 }
 
 blockquote {
@@ -276,8 +289,24 @@ nav a:hover {
 	margin-top: 30px;
 }
 .footer-container footer {
-    color: white;
     padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+footer span {
+	display: inline-block;
+}
+footer span:before {
+	content: " - ";
+	padding-left: 20px;
+	padding-right: 20px;
+}
+footer span:first-child:before {
+	display: none;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
 }
 
 /* ===============

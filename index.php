@@ -29,8 +29,12 @@
 
         	<div class="header-container">
             	<header class="wrapper clearfix" role="banner">
-                	<h1 class="title" role="heading" aria-level="1">Billedkunst for børn v/Sassi Bischoff</h1>
-					<p class="subtitle">Kulturstationen i Vanløse, spejlsalen</p>
+                	<h1 class="title" role="heading" aria-level="1">Billedkunst for børn v/Sassi Bischoff <span>(tlf: 24873101)</span></h1>
+					<p class="subtitle">
+						Kulturstationen i Vanløse<br/>
+						Frode Jakobsens Plads 4, 1.<br/>
+						Biblioteksindgang; Jernbane Alle 38, 2720 Vanløse
+					</p>
                 	<!--<nav role="navigation">
                     	<ul>
                         	<li><a href="#">nav ul li a</a></li>
@@ -51,10 +55,12 @@
 								<div class="image-wrap show-right">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
 								</div>
-								<h2>Elsker dit barn at tegne og male? - Så er denne workshop lige sagen!</h2>
-								<p>Vi skal arbejde med tusch og smukke akvarelfarver. Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog. Hvert barn får minimum ét færdigt billede med hjem. Der kræves ingen forudsætninger, kun lyst til at tegne/male.<br/>Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.</p>
-								<p>Intro-pris: 185 kr. pr. deltager.</p>
-								<p>Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>Jeg foretrækker at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat</p>
+								<h2>Elsker dit barn at tegne og male?</h2>
+								<p class="manchet">- Så prøv en workshop eller billedkunstholdet!</p>
+
+								<p>Hos mig, er billedkunst et sjovt og kreativt frirum, hvor børnene har mulighed for kreativ udfoldelse og fordybelse.</p>
+								<p>Jeg foretrækker altid at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat.</p>
+								<p>Læs mere om workshop og hold herunder. Tilmelding længere nede på siden.</p>
 							</div>
 						</section>
 
@@ -64,46 +70,100 @@
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
 								</div>
                     			<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
-								<p>For de 5-7 årige<br/>Lørdag d. 28. marts 2015 kl. 10-13.00</p>
+								<p class="manchet">For de 5-7 årige</p>
+								<p>Lørdag d. 25. april 2015 kl. 10-13.00<br/>Sted: Kulturstationen: Spejlsalen</p>
+								<p>
+									Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
+									Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
+									Hvert barn får minimum ét færdigt billede på lærred med hjem.
+									Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+								</p>
+								<blockquote>
+									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
+									Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
+								</blockquote>
+								<p>
+									Intro-pris: 185 kr. pr. deltager.<br/>
+									Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
+									Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+								</p>
 							</div>
 						</section>
 
 						<section aria-labelledby="section-heading-ws-2" class="boxed-band even">
 							<div class="clearfix">
 								<div class="image-wrap show-right">
-									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
 								</div>
                     			<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
-								<p>For de 8-10 årige<br/>Lørdag d. 28. marts 2015 kl. 14-17.00</p>
+								<p class="manchet">For de 8-10 årige</p>
+								<p>Lørdag d. 25. april 2015 kl. 14-17.00<br/>Sted: Kulturstationen: Spejlsalen</p>
+								<p>
+									Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
+									Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
+									Hvert barn får minimum ét færdigt billede på lærred med hjem.
+									Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+								</p>
+								<blockquote>
+									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
+									Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
+								</blockquote>
+								<p>
+									Intro-pris: 185 kr. pr. deltager.<br/>
+									Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
+									Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+								</p>
 							</div>
 						</section>
 
 						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd">
 							<div class="clearfix">
-                    			<h2 id="section-heading-hold-1" role="heading" aria-level="2">Hold 1</h2>
+								<div class="image-wrap show-left">
+									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+								</div>
+                    			<h2 id="section-heading-hold-1" role="heading" aria-level="2">Billedkunsthold 1</h2>
+								<p class="manchet">Billedkunst for 6-10 årige</p>
+                                <p>
+									Kort forårskursus (5 onsdage)<br/>
+									d. 6. maj, 13.maj, 20.maj, 3. juni og 10. juni kl. 15.00-17.00<br/>
+									(Ingen undervisning i uge 22)<br/>
+									Sted: Kulturstationen: Spejlsalen
+								</p>
 								<p>
-									Billedkunst for børn 6-10 år 4 onsdage i april: d. 8. 15. 22. og 29. april kl. 15.00-17.00.<br/>
-									Vi skal arbejde med enkelte teknikker, tegning, akvarel og collage. Børnene inspireres til at finde motiver og lege med farvesammensætning. Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+									Vi skal arbejde med tegning, maleri, akryl og akvarelfarver, collage, m.m.<br/>
+									Børnene præsenteres for enkelte teknikker og inspireres til at finde motiver, lege med farvesammensætning og udfolde deres billedsprog. Der kræves ingen forudsætninger, kun lyst til at tegne og male.
 								</p>
 								<blockquote>
-									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.<br/>
-									Intro-pris: 525 kr pr. deltager.<br/>
-									Bemærk! Prisen er inkl. alle materialer.<br/>
+									Husk praktisk tøj som godt må få lidt maling på + evt en drikkedunk og et stykke brød/frugt til pausen.
 								</blockquote>
 								<p>
-									Tilmelding kan ske over facebook, hjemmeside, mail eller telefon senest d.???<br/>
-									Min. 6 deltagere på hvert hold max. 12.<br/>
-									Betaling kan ske over mobilpay eller via kontooverførsel.<br/>
-									Ved tilmelding på hjemmesiden modtager du en mail med oplysninger omkring betaling.<br/>
-									Mærk din indbetaling med telefonnummer eller mailadresse.<br/>
-									Når din betaling er registreret, er din tilmelding gennemført.<br/>
-									Du modtager en bekræftelse på mail eller sms.<br/>
-									I tilfælde af, at holdet ikke kan oprettes ved for få tilmeldte, refunderes din indbetaling.<br/>
+									Intro-pris: 550 kr pr. deltager.<br/>
+									Bemærk! Prisen er inkl. alle materialer.<br/>
+									Tilmelding inden d. 22/4-2015 af hensyn til lokalebooking.
 								</p>
 							</div>
 						</section>
 
+
 						<section aria-labelledby="section-heading-subscribe" class="boxed-band even">
+                    		<h2 id="section-heading-explain" role="heading" aria-level="2">Information om tilmelding</h2>
+                        	<p>
+								Ved tilmelding her på siden modtager du en mail med oplysninger omkring betaling.<br/>
+								Betaling kan ske over MobilePay eller via kontooverførsel. Mærk din indbetaling med telefonnummer eller mailadresse. Når din betaling er registreret, er din tilmelding gennemført.
+							</p>
+							<p>
+								Du modtager en bekræftelse på mail eller sms. Minimum 6 deltagere på hvert hold.
+								I tilfælde af, at holdet ikke kan oprettes ved for få tilmeldte, refunderes din indbetaling.
+							</p>
+							<p>
+								Du er altid velkommen til at kontakte mig på mail eller telefon hvis du har spørgsmål.
+								Tilmelding kan også ske pr. mail eller telefon.
+							</p>
+							<p>
+								Tlf: <a href="tel:24873101">24873101</a><br/>
+								Mail: <a href="mailto:sassibis@hotmail.com">sassibis@hotmail.com</a><br/>
+								Konto: 3201 3201529328
+							</p>
                     		<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
                     		<form action="subscribe.php" name="workshops" id="workshop" method="post">
@@ -124,7 +184,7 @@
 									<legend class="visuallyhidden">Vælg workshop</legend>
 									<label>
 										<input type="checkbox" name="checkbox[0]" /> <!-- checked="checked"-->
-										<span>Vælg workshop 1</span>
+										<span>Vælg Workshop 1</span>
 									</label>
 									<div class="form-group" id="0">
 										<label>
@@ -144,7 +204,7 @@
 
 									<label>
 										<input type="checkbox" name="checkbox[1]" />
-										<span>Vælg workshop 2</span>
+										<span>Vælg Workshop 2</span>
 									</label>
 									<div class="form-group" id="1">
 										<label>
@@ -154,6 +214,36 @@
 										<label>
 											<span>Barnets alder</span>
 											<select name="workshop[1][0][childage]" disabled="disabled">
+												<option value="8">8 år</option> 
+												<option value="9">9 år</option>
+												<option value="10">10 år</option>
+											</select>
+										</label>
+										<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
+									</div>
+
+									<label>
+										<input type="checkbox" name="checkbox[2]" />
+										<span>Vælg Billedkunsthold 1</span>
+
+
+                                        <!-- TODO:  -->
+
+                                        <input type="hidden" name="hold_price" value="550"/>
+
+
+
+									</label>
+									<div class="form-group" id="2">
+										<label>
+											<span>Barnets navn</span>
+											<input type="text" name="workshop[2][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+										</label>
+										<label>
+											<span>Barnets alder</span>
+											<select name="workshop[2][0][childage]" disabled="disabled">
+												<option value="6">6 år</option> 
+												<option value="7">7 år</option> 
 												<option value="8">8 år</option> 
 												<option value="9">9 år</option>
 												<option value="10">10 år</option>
@@ -193,12 +283,30 @@
 									<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
 								</div>
                     			<h2 role="heading" aria-level="2">Sassi Bischoff</h2>
-                    			<p>Jeg er uddannet billedkunstformidler & håndarbejdslærer (billedlinien)</p>
-								<p>Jeg arbejder som freelance billedkunstner og udstiller blandt andet mine billeder i gallerier og kunstforeninger.</p> 
-								<p>Mine jobaktiviteter har i øvrigt altid koncentreret sig om billedkunst og pædagogiske fag, særligt arbejde med børn og unge. Her igennem har jeg fået mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.</p>
+                    			<p>
+									Jeg er uddannet billedkunstformidler & håndarbejdslærer på Seminarium for Håndværk & Design.
+								</p>
+								<p>
+									Mine jobaktiviteter har ofte koncentreret sig om billedkunst og pædagogiske fag. Jeg mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.
+								</p> 
+								<p>
+									Jeg arbejder desuden som freelance billedkunstner og udstiller mine billeder i gallerier og kunstforeninger. Som person, er jeg imødekommende og positiv. Jeg har en åben og anerkendende tilgang til børnene. Mit udgangspunkt er, at billedkunst skal være et sjovt og kreativt frirum, hvor børnene har plads til kreativ udfoldelse og fordybelse.
+								</p>
+								<p>
+                                    Medlem af Danmarks Billedkunstlærere.
+								</p>
+
+								<h3>Uddannelser</h3>
+
+								<p>
+								2012-15: Kunsthistorie enkelfag. (BA) Åbent Universitet, København<br/>
+								2004-05: Pædagogisk Diplomuddannelse, Billedkunstformidler, Billedkunst & Æstetik, CVU København<br/>
+								1995-98: Billedformidler/Håndarbejdslærer, Seminarium for Håndværk og Design, Nordjylland, Billedlinien<br/>
+								1991-92: Aalborg Kunstskole, Grundskole & fagskole i maleri
+			  </p>
 							</div>
                 		</aside>
-
+<!--
             			<aside class="boxed-band even">
 							<div class="clearfix">
                 				<h2 role="heading" aria-level="2">Galleri</h2>
@@ -223,7 +331,7 @@
 									</a>
 								</div>
 							</div>
-						</aside>
+						</aside>-->
 
 					</div>
 
@@ -233,7 +341,20 @@
 
         	<div class="footer-container">
             	<footer class="wrapper" role="contentinfo">
-                	<h3 role="heading" aria-level="3">footer</h3>
+					<p>
+						<span>
+							Sassi Bischoff
+						</span>
+						<span>
+							Tlf: <a href="tel:24873101">24873101</a><br/>
+						</span>
+						<span>
+							Mail: <a href="mailto:sassibis@hotmail.com">sassibis@hotmail.com</a><br/>
+						</span>
+						<span>
+							Konto: 3201 3201529328
+						</span>
+					</p>
             	</footer>
         	</div>
 
