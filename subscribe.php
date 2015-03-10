@@ -88,10 +88,10 @@ if (!empty($_POST)) {
 			$headers .= "From: sassibis@hotmail.com\r\n";
 
 			// Send mail
-			//mail($to, $subject, $message, $headers);
+			mail($to, $subject, $message, $headers);
 
 			// Sassis mail
-			//mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
+			mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 
 		}
 	}
