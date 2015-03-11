@@ -14,6 +14,7 @@
         <title>Billedkunst for børn v/Sassi Bischoff</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="http://www.sassi.dk/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg"/>
 
         <link rel="stylesheet" href="static/css/normalize.min.css">
 		<link rel="stylesheet" href="static/css/main.css">
