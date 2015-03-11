@@ -50,12 +50,12 @@
 
 					<div class="main-content">
 
-						<section aria-labelledby="section-heading-ws-1" class="boxed-band even">
+						<section aria-labelledby="section-heading-intro-1" class="boxed-band even">
 							<div class="clearfix">
 								<div class="image-wrap show-right">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
 								</div>
-								<h2>Elsker dit barn at tegne og male?</h2>
+								<h2 id="section-heading-intro-1" role="heading" aria-level="2">Elsker dit barn at tegne og male?</h2>
 								<p class="manchet">- Så prøv en workshop eller billedkunstholdet!</p>
 
 								<p>Hos mig, er billedkunst et sjovt og kreativt frirum, hvor børnene har mulighed for kreativ udfoldelse og fordybelse.</p>
@@ -164,8 +164,8 @@
 								Mail: <a href="mailto:sassibis@hotmail.com">sassibis@hotmail.com</a><br/>
 								Konto: 3201 3201529328
 							</p>
-                    		<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
 
+                    		<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
                     		<form action="subscribe.php" name="workshops" id="workshop" method="post">
 								<input type="hidden" name="price" value="185"/>
 								<fieldset>
@@ -182,14 +182,15 @@
 
 								<fieldset>
 									<legend class="visuallyhidden">Vælg workshop</legend>
+
 									<label>
-										<input type="checkbox" name="checkbox[0]" /> <!-- checked="checked"-->
+										<input type="checkbox" name="checkbox[0]" />
 										<span>Vælg Workshop 1</span>
 									</label>
 									<div class="form-group" id="0">
 										<label>
 											<span>Barnets navn</span>
-											<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+											<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" />
 										</label>
 										<label>
 											<span>Barnets alder</span>
@@ -209,7 +210,7 @@
 									<div class="form-group" id="1">
 										<label>
 											<span>Barnets navn</span>
-											<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+											<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" />
 										</label>
 										<label>
 											<span>Barnets alder</span>
@@ -225,19 +226,12 @@
 									<label>
 										<input type="checkbox" name="checkbox[2]" />
 										<span>Vælg Billedkunsthold 1</span>
-
-
-                                        <!-- TODO:  -->
-
-                                        <input type="hidden" name="hold_price" value="550"/>
-
-
-
+										<!--<input type="hidden" name="hold_price" value="550"/>-->
 									</label>
 									<div class="form-group" id="2">
 										<label>
 											<span>Barnets navn</span>
-											<input type="text" name="workshop[2][0][childname]" placeholder="Dit barns navn" disabled="disabled" required />
+											<input type="text" name="workshop[2][0][childname]" placeholder="Dit barns navn" disabled="disabled" />
 										</label>
 										<label>
 											<span>Barnets alder</span>
@@ -252,6 +246,7 @@
 										<a href="#" class="add-person" tabindex="-1">tilmeld flere børn</a>
 									</div>
 								</fieldset>
+
 								<fieldset>
 									<legend class="visuallyhidden">Personlig besked</legend>
 									<label>

@@ -1,4 +1,8 @@
+[] Tilmelding virker ikke!
+
 [] Anden pris på billedkunstholdet (550)
+
+[] Man kan ikke fortryde tilvalg af flere børn. Mere validering.
 
 [*] Header: Tekst skal samles lidt bedre.
 

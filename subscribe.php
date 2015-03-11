@@ -1,6 +1,7 @@
 <?php
 if (!empty($_POST)) {
 
+	$i = 1;
 	$workshopType = "";
 	$numOfChildren = 0;
 	$price = $_POST['price'];
@@ -18,7 +19,7 @@ if (!empty($_POST)) {
 
 	foreach ($_POST['workshop'] as $index => $workshop) {
 
-		if (isset($_POST['checkbox'][$index])) {
+		if (isset($_POST['checkbox'][$i])) {
 
 			$j = 1;
 			foreach ($workshop as $key => $child) {
@@ -45,12 +46,12 @@ if (!empty($_POST)) {
 				}
 			}
 
-			$workshopType = $index === 2 ? "Billedkunsthold 1" : "Workshop" . ($index + 1);
+			$workshopType = $i === 2 ? "Billedkunsthold 1" : "Workshop " . $i;
 
 			$message .= " til " . $workshopType;
 			$tosassi .= " til " . $workshopType;
 
-			if (count($_POST['checkbox']) > $index + 1) {
+			if (count($_POST['checkbox']) > $i) {
 				$message .= ", samt ";
 				$tosassi .= ", samt ";
 			} else {
@@ -58,7 +59,10 @@ if (!empty($_POST)) {
 				$tosassi .= ".\n\n";
 			}
 		}
-		if (count($_POST['workshop']) === $index + 1) {
+
+		if (count($_POST['workshop']) === $i) {
+
+			//break;
 
 			$message .= "Antal tilmeldinger er " . $numOfChildren . " a " . $price . " kr. Samlet beløb: " . ($numOfChildren * $price) . " kr.\n\n";
 			$message .= "Betaling kan ske over mobilpay på tlf: 24873101 eller via kontooverførsel til reg: 3201 Konto: 3201529328.\n";
@@ -88,12 +92,13 @@ if (!empty($_POST)) {
 			$headers .= "From: sassibis@hotmail.com\r\n";
 
 			// Send mail
-			mail($to, $subject, $message, $headers);
+			//mail($to, $subject, $message, $headers);
 
 			// Sassis mail
-			mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
+			//mail("sassibis@hotmail.com", "Tilmelding til workshops", $tosassi, $headers);
 
 		}
+		$i++;
 	}
 }
 
