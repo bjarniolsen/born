@@ -446,7 +446,7 @@ label > textarea {
 }
 
 .selected + .form-group {
-	max-height: 500px;
+	max-height: 3000px;
 }
 
 .image-wrap {

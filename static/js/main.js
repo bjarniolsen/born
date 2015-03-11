@@ -4,7 +4,6 @@ S.Workshop = (function(win, doc, $) {
 
     function submitHandler(form) {
 		// get array of posted values
-		console.log(form.serializeArray());
 		$.ajax({
 			url: "subscribe.php",
 			type: "POST",

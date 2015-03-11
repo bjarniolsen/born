@@ -188,6 +188,7 @@
 										<span>Vælg Workshop 1</span>
 									</label>
 									<div class="form-group" id="0">
+										<input type="hidden" name="price[0]" value="185"/>
 										<label>
 											<span>Barnets navn</span>
 											<input type="text" name="workshop[0][0][childname]" placeholder="Dit barns navn" disabled="disabled" />
@@ -208,6 +209,7 @@
 										<span>Vælg Workshop 2</span>
 									</label>
 									<div class="form-group" id="1">
+										<input type="hidden" name="price[1]" value="185"/>
 										<label>
 											<span>Barnets navn</span>
 											<input type="text" name="workshop[1][0][childname]" placeholder="Dit barns navn" disabled="disabled" />
@@ -226,9 +228,9 @@
 									<label>
 										<input type="checkbox" name="checkbox[2]" />
 										<span>Vælg Billedkunsthold 1</span>
-										<!--<input type="hidden" name="hold_price" value="550"/>-->
 									</label>
 									<div class="form-group" id="2">
+										<input type="hidden" name="price[2]" value="550"/>
 										<label>
 											<span>Barnets navn</span>
 											<input type="text" name="workshop[2][0][childname]" placeholder="Dit barns navn" disabled="disabled" />

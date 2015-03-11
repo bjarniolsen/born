@@ -2,9 +2,10 @@
 if (!empty($_POST)) {
 
 	$i = 1;
+	$k = 0;
 	$workshopType = "";
 	$numOfChildren = 0;
-	$price = $_POST['price'];
+	$price = 0;//$_POST['price'];
 	$message = "Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff.\n";
 	$message .= "Kulturstationen i Vanløse, spejlsalen\n";
 	$message .= "Indgang ved biblioteket\n";
@@ -19,12 +20,15 @@ if (!empty($_POST)) {
 
 	foreach ($_POST['workshop'] as $index => $workshop) {
 
-		if (isset($_POST['checkbox'][$i])) {
+		if (isset($_POST['checkbox'][$index])) {
 
+			$k++;
 			$j = 1;
 			foreach ($workshop as $key => $child) {
 
 				if (!empty($child['childname'])) {
+
+					$price += $_POST['price'][$index];
 
 					$message .= $child['childname'] . " (". $child['childage'] . " år)";
 					$tosassi .= $child['childname'] . " (". $child['childage'] . " år)";
@@ -46,12 +50,12 @@ if (!empty($_POST)) {
 				}
 			}
 
-			$workshopType = $i === 2 ? "Billedkunsthold 1" : "Workshop " . $i;
+			$workshopType = $i === 3 ? "Billedkunsthold 1" : "Workshop " . $i;
 
 			$message .= " til " . $workshopType;
 			$tosassi .= " til " . $workshopType;
 
-			if (count($_POST['checkbox']) > $i) {
+			if (count($_POST['checkbox']) > $k) {
 				$message .= ", samt ";
 				$tosassi .= ", samt ";
 			} else {
@@ -62,9 +66,7 @@ if (!empty($_POST)) {
 
 		if (count($_POST['workshop']) === $i) {
 
-			//break;
-
-			$message .= "Antal tilmeldinger er " . $numOfChildren . " a " . $price . " kr. Samlet beløb: " . ($numOfChildren * $price) . " kr.\n\n";
+			$message .= "Samlet beløb: " . $price . " kr.\n\n";
 			$message .= "Betaling kan ske over mobilpay på tlf: 24873101 eller via kontooverførsel til reg: 3201 Konto: 3201529328.\n";
 			$message .= "Mærk din indbetaling med telefonnummer eller mailadresse.\n";
 			$message .= "Når din betaling er registreret, er din tilmelding gennemført.\n";
