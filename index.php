@@ -4,11 +4,6 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-
-<!-- // TODO: REMOVE THIS // -->
-		<meta name="robots" content="noindex">
-<!-- ////// -->
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Billedkunst for børn v/Sassi Bischoff</title>
