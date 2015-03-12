@@ -191,7 +191,7 @@ body {
 
 .title {
 	position: relative;
-	margin: 1.5em 0 0;
+	margin: 0.5em 0 0;
     font-family: 'titilliumthin', sans-serif;
     font-size: 1.8em;
 }
@@ -498,6 +498,9 @@ label > textarea {
    ========================================================================== */
 
 @media only screen and (max-width: 320px) {
+	.title {
+		font-size: 1.5em;
+	}
 	label > input[type="text"] {
 		max-width: none;
 		min-width: 100%;
@@ -565,12 +568,13 @@ label > textarea {
 
 .title {
 	padding-left: 340px;
+	font-size: 1.5em;
 }
 .title:before {
 	content: "";
 	position: absolute;
 	z-index: 2;
-	top: -2em;
+	top: -1em;
 	left: 0;
 	width: 340px;
 	height: 233px;
@@ -619,6 +623,13 @@ label > textarea {
 		width: 100%;
 		float: none;
 		margin: 0;
+	}
+	.title {
+		margin-top: 1.2em;
+		font-size: 1.8em;
+	}
+	.title:before {
+		top: -2em;
 	}
 }
 
