@@ -50,7 +50,7 @@ if (!empty($_POST)) {
 				}
 			}
 
-			$workshopType = $i === 3 ? "Billedkunsthold 1" : "Workshop " . $i;
+			$workshopType = $index === 2 ? "Billedkunsthold 1" : "Workshop " . ($index + 1);
 
 			$message .= " til " . $workshopType;
 			$tosassi .= " til " . $workshopType;
@@ -83,7 +83,7 @@ if (!empty($_POST)) {
 
 
 			// Build mail
-			$to = $_POST['email']; //"root@localhost.com";
+			$to =  $_POST['email']; //"root@localhost.com";
 			$subject = 'Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff';
 			$message = $message;
 			$headers = "MIME-Version: 1.0\n" ;
