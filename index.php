@@ -174,8 +174,9 @@
 								Konto: 3201 3201529328
 							</p>
 
-                    		<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
                     		<form action="subscribe.php" name="workshops" id="workshop" method="post">
+                    			<h2 id="section-heading-subscribe" role="heading" aria-level="2">Tilmelding</h2>
+
 								<input type="hidden" name="price" value="185"/>
 								<fieldset>
 									<legend class="visuallyhidden">Personlige oplysninger</legend>
@@ -294,7 +295,7 @@
 										Jeg er uddannet billedkunstformidler & håndarbejdslærer på Seminarium for Håndværk & Design.
 									</p>
 									<p>
-										Mine jobaktiviteter har ofte koncentreret sig om billedkunst og pædagogiske fag. Jeg mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.
+										Mine jobaktiviteter har ofte koncentreret sig om billedkunst og pædagogiske fag. Jeg har mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.
 									</p> 
 									<p>
 										Jeg arbejder desuden som freelance billedkunstner og udstiller mine billeder i gallerier og kunstforeninger. Som person, er jeg imødekommende og positiv. Jeg har en åben og anerkendende tilgang til børnene. Mit udgangspunkt er, at billedkunst skal være et sjovt og kreativt frirum, hvor børnene har plads til kreativ udfoldelse og fordybelse.

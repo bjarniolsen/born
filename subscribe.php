@@ -5,7 +5,7 @@ if (!empty($_POST)) {
 	$k = 0;
 	$workshopType = "";
 	$numOfChildren = 0;
-	$price = 0;//$_POST['price'];
+	$price = 0;
 	$message = "Tak for din tilmelding til Billedkunst for børn v/Sassi Bischoff.\n";
 	$message .= "Kulturstationen i Vanløse, spejlsalen\n";
 	$message .= "Indgang ved biblioteket\n";

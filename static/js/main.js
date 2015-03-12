@@ -34,7 +34,7 @@ S.Workshop = (function(win, doc, $) {
     	// Clone labels and give them new attributes
     	for (var i=0; i<prevLabels.length; i++) {
     		var attribute = $(prevLabels[i]).children("[name]").attr("name");
-			var newLabel = $(prevLabels[i]).clone();
+			var newLabel = $(prevLabels[i]).clone().addClass("new-person");
 
 			var getNumbers = attribute.match(/\d+/g);
 			var getLastNumber = getNumbers[getNumbers.length-1];
@@ -57,36 +57,42 @@ S.Workshop = (function(win, doc, $) {
     	}
 
 		// Add a delete link before ADD PERSON link
-		var deleteLink = $('<a href="#" class="delete-person">Fjern</a>').on("click", function(event) {
+		var deleteLink = $('<a href="#" class="delete-person new-person">Fjern igen</a>').on("click", function(event) {
 			event.preventDefault();
 			// loop and remove newly created label elements
 			$.each(newLabels, function(i, item) {
 				item.remove();
 			});
 			// ...and remove DELETE link again
-			event.target.remove();
+			$(event.target).remove();
 		}).insertBefore(element);
     }
 
     function expandGroup(element) {
-    	if ($(element).is(":checked")) {
-    		var parentElement = $(element).parent();
-    		parentElement.next(".form-group").find("input, select, a").each(function() {
+    	var parentElement = $(element).parent();
+
+    	parentElement.next(".form-group").find("input, select, a").each(function() {
+    		if ($(element).is(":checked")) {
     			if ($(this).is("input")) {
     				setTimeout(function() {
     					$(this).focus().removeClass("error");
     				}.bind($(this)), 0);
     			}
-    			if ($(this).hasClass("add-person")) {
+    			if ($(this).hasClass("add-person") || $(this).hasClass("delete-person")) {
     				$(this).removeAttr("tabindex");
     			} else {
     				$(this).prop("disabled", false);
     			}
-    		});
-    		parentElement.addClass("selected");
-    	} else {
-    		$(element).parent().removeClass("selected");
-    	}
+    			parentElement.addClass("selected");
+    		} else {
+    			$(element).parent().removeClass("selected");
+    			if ($(this).hasClass("add-person") || $(this).hasClass("delete-person")) {
+    				$(this).attr("tabindex", -1);
+    			} else {
+    				$(this).prop("disabled", true);
+    			}
+    		}
+    	});
 
         // revalidate form
     	validate($("form"), true);
