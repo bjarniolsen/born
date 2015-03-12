@@ -77,7 +77,7 @@ if (!empty($_POST)) {
 
 			echo $message;
 
-			$tosassi .= "Antal tilmeldinger er " . $numOfChildren . " a " . $price . " kr. Samlet beløb: " . ($numOfChildren * $price) . " kr.\n\n";
+			$tosassi .= "Samlet beløb: " . $price . " kr.\n\n";
 			$tosassi .= "Personlig besked:\n";
 			$tosassi .= "\"" . $_POST['message'] . "\"\n";
 

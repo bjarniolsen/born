@@ -6,6 +6,14 @@ html {
     line-height: 1.4;
 }
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -184,32 +192,21 @@ body {
 .title {
 	position: relative;
 	margin: 1.5em 0 0;
-	padding-left: 340px;
     font-family: 'titilliumthin', sans-serif;
     font-size: 1.8em;
-}
-.title:before {
-	content: "";
-	position: absolute;
-	z-index: 2;
-	top: -2em;
-	left: 0;
-	width: 340px;
-	height: 233px;
-	background: url("../img/sassi-logo.gif") left center no-repeat;
 }
 .title > span {
 	font-size: 0.7em;
 }
 .subtitle {
 	margin-top: 8px;
-	padding-left: 340px;
     font-family: 'titilliumthin_upright', sans-serif;
     font-size: 1.1em;
     line-height: 1;
 }
 
 h2 {
+	margin-top: 10px;
 	margin-bottom: 4px;
 	font-family: 'titilliumlight', sans-serif;
 	font-size: 2.2em;
@@ -451,10 +448,6 @@ label > textarea {
 
 .image-wrap {
 	width: 30%;
-	/*overflow: hidden;
-	border-radius: 100%;
-	width: 350px;
-	height: 350px;*/
 }
 
 .image-wrap img {
@@ -467,17 +460,19 @@ label > textarea {
 	margin-top: -20%;*/
 }
 
-section .image-wrap {
-}
-
-.image-wrap.show-left {
+.show-left .image-wrap {
 	float: left;
-	margin-right: 60px;
+	padding-right: 60px;
 }
 
-.image-wrap.show-right {
+.show-right .image-wrap {
 	float: right;
-	margin-left: 60px;
+	padding-left: 60px;
+}
+
+.text-wrap {
+	float: left;
+	width: 70%;
 }
 
 .gallery {
@@ -501,6 +496,34 @@ section .image-wrap {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media only screen and (max-width: 320px) {
+	label > input[type="text"] {
+		max-width: none;
+		min-width: 100%;
+	}
+	label > select {
+		max-width: none;
+		min-width: 100%;
+	}
+	label > textarea {
+		max-width: none;
+		min-width: 100%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+
+	.text-wrap,
+	.show-right .image-wrap,
+	.show-left .image-wrap,
+	.image-wrap {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
 
 @media only screen and (min-width: 480px) {
 
@@ -539,6 +562,24 @@ section .image-wrap {
 
 @media only screen and (min-width: 768px) {
 
+
+.title {
+	padding-left: 340px;
+}
+.title:before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: -2em;
+	left: 0;
+	width: 340px;
+	height: 233px;
+	background: url("../img/sassi-logo.gif") left center no-repeat;
+}
+.subtitle {
+	padding-left: 340px;
+}
+
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
@@ -560,18 +601,7 @@ section .image-wrap {
 
 /* ============
     WIDE: Main
-   ============
-
-    .main .main-content {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 33%;
-    }
-*/
+   ============ */
 }
 
 @media only screen and (min-width: 1200px) {

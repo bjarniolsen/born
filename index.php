@@ -51,97 +51,105 @@
 
 					<div class="main-content">
 
-						<section aria-labelledby="section-heading-intro-1" class="boxed-band even">
+						<section aria-labelledby="section-heading-intro-1" class="boxed-band even show-right">
 							<div class="clearfix">
-								<div class="image-wrap show-right">
+								<div class="image-wrap">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
 								</div>
-								<h2 id="section-heading-intro-1" role="heading" aria-level="2">Elsker dit barn at tegne og male?</h2>
-								<p class="manchet">- Så prøv en workshop eller billedkunstholdet!</p>
+								<div class="text-wrap">
+									<h2 id="section-heading-intro-1" role="heading" aria-level="2">Elsker dit barn at tegne og male?</h2>
+									<p class="manchet">- Så prøv en workshop eller billedkunstholdet!</p>
 
-								<p>Hos mig, er billedkunst et sjovt og kreativt frirum, hvor børnene har mulighed for kreativ udfoldelse og fordybelse.</p>
-								<p>Jeg foretrækker altid at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat.</p>
-								<p>Læs mere om workshop og hold herunder. Tilmelding længere nede på siden.</p>
+									<p>Hos mig, er billedkunst et sjovt og kreativt frirum, hvor børnene har mulighed for kreativ udfoldelse og fordybelse.</p>
+									<p>Jeg foretrækker altid at børnene arbejder med materialer af høj kvalitet, både for at få en god oplevelse og et godt resultat.</p>
+									<p>Læs mere om workshop og hold herunder. Tilmelding længere nede på siden.</p>
+								</div>
 							</div>
 						</section>
 
-						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd">
+						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap show-left">
+								<div class="image-wrap">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
 								</div>
-                    			<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
-								<p class="manchet">For de 5-7 årige</p>
-								<p>Lørdag d. 25. april 2015 kl. 10-13.00<br/>Sted: Kulturstationen: Spejlsalen</p>
-								<p>
-									Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
-									Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
-									Hvert barn får minimum ét færdigt billede på lærred med hjem.
-									Der kræves ingen forudsætninger, kun lyst til at tegne/male.
-								</p>
-								<blockquote>
-									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
-									Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
-								</blockquote>
-								<p>
-									Intro-pris: 185 kr. pr. deltager.<br/>
-									Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
-									Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
-								</p>
+								<div class="text-wrap">
+                    				<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
+									<p class="manchet">For de 5-7 årige</p>
+									<p>Lørdag d. 25. april 2015 kl. 10-13.00<br/>Sted: Kulturstationen: Spejlsalen</p>
+									<p>
+										Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
+										Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
+										Hvert barn får minimum ét færdigt billede på lærred med hjem.
+										Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+									</p>
+									<blockquote>
+										Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
+										Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
+									</blockquote>
+									<p>
+										Intro-pris: 185 kr. pr. deltager.<br/>
+										Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
+										Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+									</p>
+								</div>
 							</div>
 						</section>
 
-						<section aria-labelledby="section-heading-ws-2" class="boxed-band even">
+						<section aria-labelledby="section-heading-ws-2" class="boxed-band even show-right">
 							<div class="clearfix">
-								<div class="image-wrap show-right">
+								<div class="image-wrap">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
 								</div>
-                    			<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
-								<p class="manchet">For de 8-10 årige</p>
-								<p>Lørdag d. 25. april 2015 kl. 14-17.00<br/>Sted: Kulturstationen: Spejlsalen</p>
-								<p>
-									Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
-									Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
-									Hvert barn får minimum ét færdigt billede på lærred med hjem.
-									Der kræves ingen forudsætninger, kun lyst til at tegne/male.
-								</p>
-								<blockquote>
-									Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
-									Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
-								</blockquote>
-								<p>
-									Intro-pris: 185 kr. pr. deltager.<br/>
-									Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
-									Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
-								</p>
+								<div class="text-wrap">
+                    				<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
+									<p class="manchet">For de 8-10 årige</p>
+									<p>Lørdag d. 25. april 2015 kl. 14-17.00<br/>Sted: Kulturstationen: Spejlsalen</p>
+									<p>
+										Vi skal arbejde med tusch og smukke akvarelfarver.<br/>
+										Børnenes fantasi udfordres og de inspireres til at udfolde deres billedsprog.
+										Hvert barn får minimum ét færdigt billede på lærred med hjem.
+										Der kræves ingen forudsætninger, kun lyst til at tegne/male.
+									</p>
+									<blockquote>
+										Påklædning: Praktisk tøj som godt kan tåle at få lidt maling på.
+										Medbring evt et stykke brød/frugt og en drikkedunk til pausen.
+									</blockquote>
+									<p>
+										Intro-pris: 185 kr. pr. deltager.<br/>
+										Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
+										Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+									</p>
+								</div>
 							</div>
 						</section>
 
-						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd">
+						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap show-left">
+								<div class="image-wrap">
 									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
 								</div>
-                    			<h2 id="section-heading-hold-1" role="heading" aria-level="2">Billedkunsthold 1</h2>
-								<p class="manchet">Billedkunst for 6-10 årige</p>
-                                <p>
-									Kort forårskursus (5 onsdage)<br/>
-									d. 6. maj, 13.maj, 20.maj, 3. juni og 10. juni kl. 15.00-17.00<br/>
-									(Ingen undervisning i uge 22)<br/>
-									Sted: Kulturstationen: Spejlsalen
-								</p>
-								<p>
-									Vi skal arbejde med tegning, maleri, akryl og akvarelfarver, collage, m.m.<br/>
-									Børnene præsenteres for enkelte teknikker og inspireres til at finde motiver, lege med farvesammensætning og udfolde deres billedsprog. Der kræves ingen forudsætninger, kun lyst til at tegne og male.
-								</p>
-								<blockquote>
-									Husk praktisk tøj som godt må få lidt maling på + evt en drikkedunk og et stykke brød/frugt til pausen.
-								</blockquote>
-								<p>
-									Intro-pris: 550 kr pr. deltager.<br/>
-									Bemærk! Prisen er inkl. alle materialer.<br/>
-									Tilmelding inden d. 22/4-2015 af hensyn til lokalebooking.
-								</p>
+								<div class="text-wrap">
+                    				<h2 id="section-heading-hold-1" role="heading" aria-level="2">Billedkunsthold 1</h2>
+									<p class="manchet">Billedkunst for 6-10 årige</p>
+                                	<p>
+										Kort forårskursus (5 onsdage)<br/>
+										d. 6. maj, 13.maj, 20.maj, 3. juni og 10. juni kl. 15.00-17.00<br/>
+										(Ingen undervisning i uge 22)<br/>
+										Sted: Kulturstationen: Spejlsalen
+									</p>
+									<p>
+										Vi skal arbejde med tegning, maleri, akryl og akvarelfarver, collage, m.m.<br/>
+										Børnene præsenteres for enkelte teknikker og inspireres til at finde motiver, lege med farvesammensætning og udfolde deres billedsprog. Der kræves ingen forudsætninger, kun lyst til at tegne og male.
+									</p>
+									<blockquote>
+										Husk praktisk tøj som godt må få lidt maling på + evt en drikkedunk og et stykke brød/frugt til pausen.
+									</blockquote>
+									<p>
+										Intro-pris: 550 kr pr. deltager.<br/>
+										Bemærk! Prisen er inkl. alle materialer.<br/>
+										Tilmelding inden d. 22/4-2015 af hensyn til lokalebooking.
+									</p>
+								</div>
 							</div>
 						</section>
 
@@ -275,33 +283,35 @@
 
 						</section>
 
-                		<aside class="boxed-band odd">
+                		<aside class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap show-left">
+								<div class="image-wrap">
 									<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
 								</div>
-                    			<h2 role="heading" aria-level="2">Sassi Bischoff</h2>
-                    			<p>
-									Jeg er uddannet billedkunstformidler & håndarbejdslærer på Seminarium for Håndværk & Design.
-								</p>
-								<p>
-									Mine jobaktiviteter har ofte koncentreret sig om billedkunst og pædagogiske fag. Jeg mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.
-								</p> 
-								<p>
-									Jeg arbejder desuden som freelance billedkunstner og udstiller mine billeder i gallerier og kunstforeninger. Som person, er jeg imødekommende og positiv. Jeg har en åben og anerkendende tilgang til børnene. Mit udgangspunkt er, at billedkunst skal være et sjovt og kreativt frirum, hvor børnene har plads til kreativ udfoldelse og fordybelse.
-								</p>
-								<p>
-                                    Medlem af Danmarks Billedkunstlærere.
-								</p>
+								<div class="text-wrap">
+                    				<h2 role="heading" aria-level="2">Sassi Bischoff</h2>
+                    				<p>
+										Jeg er uddannet billedkunstformidler & håndarbejdslærer på Seminarium for Håndværk & Design.
+									</p>
+									<p>
+										Mine jobaktiviteter har ofte koncentreret sig om billedkunst og pædagogiske fag. Jeg mange års erfaring i at arbejde med børn og billedkunst. Både børnehavebørn og skole/klubbørn.
+									</p> 
+									<p>
+										Jeg arbejder desuden som freelance billedkunstner og udstiller mine billeder i gallerier og kunstforeninger. Som person, er jeg imødekommende og positiv. Jeg har en åben og anerkendende tilgang til børnene. Mit udgangspunkt er, at billedkunst skal være et sjovt og kreativt frirum, hvor børnene har plads til kreativ udfoldelse og fordybelse.
+									</p>
+									<p>
+                                    	Medlem af Danmarks Billedkunstlærere.
+									</p>
 
-								<h3>Uddannelser</h3>
+									<h3>Uddannelser</h3>
 
-								<p>
-								2012-15: Kunsthistorie enkelfag. (BA) Åbent Universitet, København<br/>
-								2004-05: Pædagogisk Diplomuddannelse, Billedkunstformidler, Billedkunst & Æstetik, CVU København<br/>
-								1995-98: Billedformidler/Håndarbejdslærer, Seminarium for Håndværk og Design, Nordjylland, Billedlinien<br/>
-								1991-92: Aalborg Kunstskole, Grundskole & fagskole i maleri
-			  </p>
+									<p>
+										2012-15: Kunsthistorie enkelfag. (BA) Åbent Universitet, København<br/>
+										2004-05: Pædagogisk Diplomuddannelse, Billedkunstformidler, Billedkunst & Æstetik, CVU København<br/>
+										1995-98: Billedformidler/Håndarbejdslærer, Seminarium for Håndværk og Design, Nordjylland, Billedlinien<br/>
+										1991-92: Aalborg Kunstskole, Grundskole & fagskole i maleri
+									</p>
+								</div>
 							</div>
                 		</aside>
 <!--
