@@ -510,11 +510,6 @@ label > textarea {
 		max-width: none;
 		min-width: 100%;
 	}
-	label > textarea {
-		max-width: none;
-		min-width: 100%;
-		width: 100%;
-	}
 }
 
 @media only screen and (max-width: 479px) {
@@ -529,6 +524,11 @@ label > textarea {
 	}
 	.form-group {
 		padding-left: 0;
+	}
+	label > textarea {
+		max-width: none;
+		min-width: 100%;
+		width: 100%;
 	}
 }
 
