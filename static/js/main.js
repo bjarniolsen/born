@@ -25,8 +25,10 @@ S.Workshop = (function(win, doc, $) {
     function addPerson(element) {
     	// Get the preceding sibling LABELS - slice limits to 2
     	// Jquery reverses the returned elements,
-    	// so we fix that with reverse method og Array.
+    	// so we fix that with reverse method of Array.
     	var prevLabels = Array.prototype.reverse.call( $(element).prevAll("label").slice(0, 2) );
+
+    	var newLabels = [];
 
     	// Loop labels - get children name attributes
     	// Clone labels and give them new attributes
@@ -47,9 +49,23 @@ S.Workshop = (function(win, doc, $) {
     		// Add new label right before the ADD PERSON link.
 			$(element).before(newLabel);
 
+			// push new label elements into this, so we can remove them later
+			newLabels.push(newLabel);
+
             // revalidate form
     		validate($("form"), true);
     	}
+
+		// Add a delete link before ADD PERSON link
+		var deleteLink = $('<a href="#" class="delete-person">Fjern</a>').on("click", function(event) {
+			event.preventDefault();
+			// loop and remove newly created label elements
+			$.each(newLabels, function(i, item) {
+				item.remove();
+			});
+			// ...and remove DELETE link again
+			event.target.remove();
+		}).insertBefore(element);
     }
 
     function expandGroup(element) {
