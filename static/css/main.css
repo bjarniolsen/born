@@ -395,6 +395,7 @@ label > input[type="checkbox"] + span {
 	line-height: 1;
 }
 .form-group {
+	clear: both;
 	padding-left: 24px;
 }
 label > select {
@@ -525,6 +526,9 @@ label > textarea {
 		float: none;
 		width: 100%;
 		padding: 0;
+	}
+	.form-group {
+		padding-left: 0;
 	}
 }
 
