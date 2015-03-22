@@ -9,7 +9,7 @@
         <title>Billedkunst for børn v/Sassi Bischoff</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:image" content="http://www.sassi.dk/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg"/>
+		<meta property="og:image" content="http://www.sassi.dk/billedkunst/static/img/sm/op_sassi-bischoff-billedkunst-3_sm.jpg"/>
 
         <link rel="stylesheet" href="static/css/normalize.min.css">
 		<link rel="stylesheet" href="static/css/main.css">
@@ -48,8 +48,15 @@
 
 						<section aria-labelledby="section-heading-intro-1" class="boxed-band even show-right">
 							<div class="clearfix">
-								<div class="image-wrap">
-									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
+								<div class="gallery">
+									<a href="/billedkunst/static/img/LARGE/op_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									</a>
+									<div class="thumbs">
+										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+									</div>
 								</div>
 								<div class="text-wrap">
 									<h2 id="section-heading-intro-1" role="heading" aria-level="2">Elsker dit barn at tegne og male?</h2>
@@ -64,8 +71,15 @@
 
 						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap">
-									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
+								<div class="gallery">
+									<a href="/billedkunst/static/img/LARGE/ws1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									</a>
+									<div class="thumbs">
+										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+									</div>
 								</div>
 								<div class="text-wrap">
                     				<h2 id="section-heading-ws-1" role="heading" aria-level="2">Workshop 1</h2>
@@ -92,8 +106,15 @@
 
 						<section aria-labelledby="section-heading-ws-2" class="boxed-band even show-right">
 							<div class="clearfix">
-								<div class="image-wrap">
-									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
+								<div class="gallery">
+									<a href="/billedkunst/static/img/LARGE/ws2_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									</a>
+									<div class="thumbs">
+										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+									</div>
 								</div>
 								<div class="text-wrap">
                     				<h2 id="section-heading-ws-2" role="heading" aria-level="2">Workshop 2</h2>
@@ -120,8 +141,15 @@
 
 						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap">
-									<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
+								<div class="gallery">
+									<a href="/billedkunst/static/img/LARGE/hold1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									</a>
+									<div class="thumbs">
+										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
+										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+									</div>
 								</div>
 								<div class="text-wrap">
                     				<h2 id="section-heading-hold-1" role="heading" aria-level="2">Billedkunsthold 1</h2>
@@ -281,8 +309,10 @@
 
                 		<aside class="boxed-band odd show-left">
 							<div class="clearfix">
-								<div class="image-wrap">
-									<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
+								<div class="gallery">
+									<div class="image-wrap">
+										<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
+									</div>
 								</div>
 								<div class="text-wrap">
                     				<h2 role="heading" aria-level="2">Sassi Bischoff</h2>

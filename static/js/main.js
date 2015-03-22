@@ -130,6 +130,32 @@ S.Workshop = (function(win, doc, $) {
 		form.removeClass("hide");
 	}
 
+	function galleryHandler(gallery) {
+		var imageLink = $(gallery).find(".image-wrap"),
+			image = imageLink.find("img"),
+			thumbs = $(gallery).find(".thumbs a");
+
+		$.each(thumbs, function(index, link) {
+			$(this).on("click", function(event) {
+				event.preventDefault();
+				image[0].src = link.pathname;
+				imageLink[0].href = link.pathname.replace(/MEDIUM/g, "LARGE");
+			});
+		});
+
+		imageLink.on("click", function(event) {
+			event.preventDefault();
+			imageLink.href = image[0].src;
+			$("body").append('<div class="modal"><span class="close">Luk</span><img src="' + imageLink[0].href + '"/></div><div class="overlay"></div>');
+			var modal = $(".modal").css("top", $(window).scrollTop() + 30),
+				overlay = $(".overlay").height($("body").height());
+			modal.find(".close").on("click", function(event) {
+				modal.remove();
+				overlay.remove();
+			});
+		});
+	}
+
     return {
         init: function() {
         	// cache dom
@@ -137,7 +163,8 @@ S.Workshop = (function(win, doc, $) {
 				checkboxes = $form.find('input[type="checkbox"]'),
 				formGroups = $form.find(".form-group"),
 				addPersonLink = formGroups.find(".add-person"),
-				errorMessageBox = $(".error-message");
+				errorMessageBox = $(".error-message"),
+				galleries = $(".gallery");
 
 			// set up validation on form fields
 			validate($form, false);
@@ -157,6 +184,11 @@ S.Workshop = (function(win, doc, $) {
         	errorMessageBox.find("button").on("click", function(event) {
         		event.preventDefault();
         		errorBox(errorMessageBox, $form);
+        	});
+
+        	// gallery
+        	$.each(galleries, function(index, gallery) {
+        		galleryHandler(gallery);
         	});
         }
 	};
