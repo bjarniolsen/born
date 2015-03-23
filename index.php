@@ -1,6 +1,4 @@
-<?php 
-$sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-?>
+<?php $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -81,18 +79,18 @@ $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd show-left">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/static/img/LARGE/ws1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="<?php echo $sitepath; ?>static/img/LARGE/ws1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="<?php echo $sitepath; ?>static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
-											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-2.jpg">
-											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-2.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws1_sassi-bischoff-billedkunst-2.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-3.jpg">
-											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-3.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws1_sassi-bischoff-billedkunst-3.jpg" alt="" />
 										</a>
 									</div>
 								</div>
@@ -122,18 +120,18 @@ $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 						<section aria-labelledby="section-heading-ws-2" class="boxed-band even show-right">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/static/img/LARGE/ws2_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="<?php echo $sitepath; ?>static/img/LARGE/ws2_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="<?php echo $sitepath; ?>static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" class="is-active">
-											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-2.jpg">
-											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-2.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws2_sassi-bischoff-billedkunst-2.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-3.jpg">
-											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-3.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/ws2_sassi-bischoff-billedkunst-3.jpg" alt="" />
 										</a>
 									</div>
 								</div>
@@ -163,18 +161,18 @@ $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd show-left">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/static/img/LARGE/hold1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="<?php echo $sitepath; ?>static/img/LARGE/hold1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="<?php echo $sitepath; ?>static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
-											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-2.jpg">
-											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-2.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/hold1_sassi-bischoff-billedkunst-2.jpg" alt="" />
 										</a>
-										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-3.jpg">
-											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-3.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/hold1_sassi-bischoff-billedkunst-3.jpg" alt="" />
 										</a>
 									</div>
 								</div>
@@ -338,7 +336,7 @@ $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 							<div class="clearfix">
 								<div class="gallery">
 									<div class="image-wrap">
-										<img src="static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
+										<img src="<?php echo $sitepath; ?>static/img/sassi-bischoff.jpg" alt="Sassi Bischoff" width="200" height="297" />
 									</div>
 								</div>
 								<div class="text-wrap">
@@ -367,33 +365,6 @@ $sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 								</div>
 							</div>
                 		</aside>
-<!--
-            			<aside class="boxed-band even">
-							<div class="clearfix">
-                				<h2 role="heading" aria-level="2">Galleri</h2>
-								<div class="gallery clearfix">
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-1.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-1.jpg" alt="" />
-									</a>
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-2.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-2.jpg" alt="" />
-									</a>
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-3.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-3.jpg" alt="" />
-									</a>
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-4.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-4.jpg" alt="" />
-									</a>
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-5.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-5.jpg" alt="" />
-									</a>
-									<a href="/billedkunst/static/img/sassi-bischoff-billedkunst-6.jpg" target="_blank">
-										<img src="/billedkunst/static/img/sm/sassi-bischoff-billedkunst-6.jpg" alt="" />
-									</a>
-								</div>
-							</div>
-						</aside>-->
-
 					</div>
 
             	</div> <!-- #main -->
