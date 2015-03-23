@@ -74,9 +74,11 @@ S.Workshop = (function(win, doc, $) {
     	parentElement.next(".form-group").find("input, select, a").each(function() {
     		if ($(element).is(":checked")) {
     			if ($(this).is("input")) {
+    				// support < IE9
+    				var that = $(this);
     				setTimeout(function() {
-    					$(this).focus().removeClass("error");
-    				}.bind($(this)), 0);
+    					that.focus().removeClass("error");
+    				}, 0);
     			}
     			if ($(this).hasClass("add-person") || $(this).hasClass("delete-person")) {
     				$(this).removeAttr("tabindex");
