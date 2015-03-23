@@ -1,3 +1,6 @@
+<?php 
+$sitepath = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -49,13 +52,19 @@
 						<section aria-labelledby="section-heading-intro-1" class="boxed-band even show-right">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/billedkunst/static/img/LARGE/op_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="<?php echo $sitepath; ?>static/img/LARGE/op_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="<?php echo $sitepath; ?>static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/op_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/op_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/op_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/op_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										</a>
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/op_sassi-bischoff-billedkunst-2.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/op_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										</a>
+										<a href="<?php echo $sitepath; ?>static/img/MEDIUM/op_sassi-bischoff-billedkunst-3.jpg">
+											<img src="<?php echo $sitepath; ?>static/img/SMALL/op_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										</a>
 									</div>
 								</div>
 								<div class="text-wrap">
@@ -72,13 +81,19 @@
 						<section aria-labelledby="section-heading-ws-1" class="boxed-band odd show-left">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/billedkunst/static/img/LARGE/ws1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="/static/img/LARGE/ws1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/ws1_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-2.jpg">
+											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/ws1_sassi-bischoff-billedkunst-3.jpg">
+											<img src="static/img/SMALL/ws1_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										</a>
 									</div>
 								</div>
 								<div class="text-wrap">
@@ -107,13 +122,19 @@
 						<section aria-labelledby="section-heading-ws-2" class="boxed-band even show-right">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/billedkunst/static/img/LARGE/ws2_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="/static/img/LARGE/ws2_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/ws2_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-2.jpg">
+											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/ws2_sassi-bischoff-billedkunst-3.jpg">
+											<img src="static/img/SMALL/ws2_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										</a>
 									</div>
 								</div>
 								<div class="text-wrap">
@@ -142,13 +163,19 @@
 						<section aria-labelledby="section-heading-hold-1" class="boxed-band odd show-left">
 							<div class="clearfix">
 								<div class="gallery">
-									<a href="/billedkunst/static/img/LARGE/hold1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
-										<img src="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+									<a href="/static/img/LARGE/hold1_sassi-bischoff-billedkunst-1.jpg" class="image-wrap">
+										<img src="static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
 									</a>
 									<div class="thumbs">
-										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" class="is-active"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-2.jpg"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-2.jpg" alt="" /></a>
-										<a href="/billedkunst/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-3.jpg"><img src="/billedkunst/static/img/SMALL/hold1_sassi-bischoff-billedkunst-3.jpg" alt="" /></a>
+										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-1.jpg" class="is-active">
+											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-1.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-2.jpg">
+											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-2.jpg" alt="" />
+										</a>
+										<a href="/static/img/MEDIUM/hold1_sassi-bischoff-billedkunst-3.jpg">
+											<img src="static/img/SMALL/hold1_sassi-bischoff-billedkunst-3.jpg" alt="" />
+										</a>
 									</div>
 								</div>
 								<div class="text-wrap">

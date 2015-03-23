@@ -131,15 +131,15 @@ S.Workshop = (function(win, doc, $) {
 	}
 
 	function galleryHandler(gallery) {
-		var imageLink = $(gallery).find(".image-wrap"),
+		var imageLink = $(gallery).find("a.image-wrap"),
 			image = imageLink.find("img"),
 			thumbs = $(gallery).find(".thumbs a");
 
 		$.each(thumbs, function(index, link) {
 			$(this).on("click", function(event) {
 				event.preventDefault();
-				image[0].src = link.pathname;
-				imageLink[0].href = link.pathname.replace(/MEDIUM/g, "LARGE");
+				image[0].src = link.href;
+				imageLink[0].href = link.href.replace(/MEDIUM/g, "LARGE");
 			});
 		});
 
