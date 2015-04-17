@@ -111,7 +111,7 @@
 									<p>
 										Intro-pris: 185 kr. pr. deltager.<br/>
 										Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
-										Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+										Du kan stadig nå at tilmelde dit barn.<br/>
 									</p>
 								</div>
 							</div>
@@ -152,7 +152,7 @@
 									<p>
 										Intro-pris: 185 kr. pr. deltager.<br/>
 										Bemærk! Prisen er inkl. alle materialer (lærred, pensler, mv.)<br/>
-										Tilmelding inden d. 11/4-2015 af hensyn til lokalebooking.<br/>
+										Du kan stadig nå at tilmelde dit barn.<br/>
 									</p>
 								</div>
 							</div>
@@ -195,7 +195,7 @@
 									<p>
 										Intro-pris: 550 kr pr. deltager.<br/>
 										Bemærk! Prisen er inkl. alle materialer.<br/>
-										Tilmelding inden d. 22/4-2015 af hensyn til lokalebooking.
+										Du kan stadig nå at tilmelde dit barn.<br/>
 									</p>
 								</div>
 							</div>
